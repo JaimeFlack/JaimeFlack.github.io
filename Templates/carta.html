@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/css/all.css">
+    <link rel="stylesheet" href="../Static/css/all.min.css">
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Static/css/fonts.css">
+    <link rel="stylesheet" href="../Static/css/fukusuke.css">
+    <title>Fukusuke Sushi</title>
+</head>
+<body style="background: url(../Static/img/IMG-body-pago.jpg);">
+    <section class="seccionToggle">
+        <div class="wrap">
+            <input class="input-buscar" type="text" name="" id="" placeholder="Buscar promoción..." required style="width: 700px;">
+            <button class="btn-search" style="border: none; background-color: red; color: white; 
+                width: 90px; padding: 3px; border-radius: 50px;">Buscar
+            </button>
+        </div>
+    </section>
+    <a href="#" id="btnToggle"><button class="btnToggle"><i class="fas fa-search" style="margin-right: 5px;"></i> Busca una promoción</button></a>
+    <header>
+        <nav>
+            <h1 class="logo-mobile">Fukusuke Sushi</h1>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <a href="../index.html"><li>Inicio</li></a>
+                <a href="../Templates/carta.html"><li>Carta</li></a>
+                <a href="../Templates/carrito-compra.html"><li>Carrito</li></a>
+                <a href="../index.html"><li><img class="logo" src="../Static/img/LOGO-fukusuke.png" alt=""></li></a>
+                <a href="../Templates/login-register.html"><li>Acceder</li></a>
+                <a href="../Templates/sobre-nosotros.html"><li>Sobre Nosotros</li></a>
+                <a href="../index.html #contacto"><li>Contacto</li></a>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-tiktok"></i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container" style="background-color: white; padding: 20px 70px 20px 70px;">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title-carta" style="text-align: center;">Carta completa de promociones</h2>
+                    <hr class="divider" style="border: .5px solid rgb(177, 177, 177);">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="display: inline-flex;">
+                    <h4 class="title-filtrar">Filtrar promociones: </h4>
+                    <div class="dropdown" style="margin-left: 20px;">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipo
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Tempura</a>
+                          <a class="dropdown-item" href="#">Envuelto en palta</a>
+                          <a class="dropdown-item" href="#">Envuelto en queso crema</a>
+                          <a class="dropdown-item" href="#">Envuelto en sésamo</a>
+                          <a class="dropdown-item" href="#">Envuelto en salmón</a>
+                          <a class="dropdown-item" href="#">Envuelto en kanikama</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-left: 10px;">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Precio
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">3.990 - 4.990</a>
+                          <a class="dropdown-item" href="#">5.990 - 6.990</a>
+                          <a class="dropdown-item" href="#">7.990 - 9.990</a>
+                          <a class="dropdown-item" href="#">10.990 - 12.990</a>
+                          <a class="dropdown-item" href="#">Mayor a 13.990</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card" style="border: 1px solid black;">
+                        <div class="card-imagen">
+                            <img src="../Static/img/IMG-banner.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-contenido" style="padding: 10px;">
+                            <div class="card-title">
+                                <h5>Promoción tempura 40 piezas</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        10 piezas tempura pollo,
+                                        10 piezas tempura kanikama,
+                                        10 piezas tempura palmito,
+                                        10 piezas tempura salmón
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-boton">
+                                        <a href="#"><button class="btn-xProducto">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <div class="text-center">
+            <button id="btnFooter" style="width: 100%; padding: 10px; border: none;
+                background-color: red; color: white;">Derechos de autor
+            </button>
+        </div>
+    </main>
+    <footer>
+        <div class="row footer" style="background-color: black; padding: 30px; display: none;">
+            <div class="col-12">
+                <div class="text-center">
+                    <img src="../Static/img/LOGO-fukusuke.png" alt="" style="width: 150px; height: 150px;">
+                    <br><br>
+                    <p style="color: white;">Todos los derechos reservados. @Copyright 2021.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/hamburguer.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

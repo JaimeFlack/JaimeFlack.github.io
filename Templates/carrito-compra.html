@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/css/all.css">
+    <link rel="stylesheet" href="../Static/css/all.min.css">
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Static/css/fonts.css">
+    <link rel="stylesheet" href="../Static/css/fukusuke.css">
+    <title>Fukusuke Sushi</title>
+</head>
+<body style="background: url(../Static/img/IMG-body-pago.jpg);">
+    <section class="seccionToggle">
+        <div class="wrap">
+            <input class="input-buscar" type="text" name="" id="" placeholder="Buscar promoción..." required style="width: 700px;">
+            <button class="btn-search" style="border: none; background-color: red; color: white; 
+                width: 90px; padding: 3px; border-radius: 50px;">Buscar
+            </button>
+        </div>
+    </section>
+    <a href="#" id="btnToggle"><button class="btnToggle"><i class="fas fa-search" style="margin-right: 5px;"></i> Busca una promoción</button></a>
+    <header>
+        <nav>
+            <h1 class="logo-mobile">Fukusuke Sushi</h1>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <a href="../index.html"><li>Inicio</li></a>
+                <a href="../Templates/carta.html"><li>Carta</li></a>
+                <a href="../Templates/carrito-compra.html"><li>Carrito</li></a>
+                <a href="../index.html"><li><img class="logo" src="../Static/img/LOGO-fukusuke.png" alt=""></li></a>
+                <a href="../Templates/login-register.html"><li>Acceder</li></a>
+                <a href="../Templates/sobre-nosotros.html"><li>Sobre Nosotros</li></a>
+                <a href="../index.html #contacto"><li>Contacto</li></a>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-tiktok"></i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <section class="seccion-pedido" style="margin: 30px 50px 50px 50px;">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="contenedor-pedidos" style="background-color: white; padding: 20px; max-height: 700px; overflow-y: scroll;
+                    border: none; border-radius: 3px;">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h1 class="title-pedido" style="color: black; font-size: 30px; font-weight: normal;">Pedido</h1>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <button class="btn-cancelar-pedido" style="float: right; border: 2px solid black; border-radius: 5px;
+                                background-color: red; color: white; width: auto; padding: 7px;">Cancelar pedido completo
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="divider" style="border: 2px solid rgb(0, 0, 0);">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="../Static/img/IMG-sushi-1.jpg" alt="" style="width: 100%; border: none; border-radius: 5px;">
+                        </div>
+                        <div class="col-10 col-lg-6">
+                            <h4>Promoción 80 piezas mixtas</h4>
+                            <p style="text-align: justify;">Detalles: 20 piezas tempura pollo, 20 piezas salmón crudo, 20 piezas pollo envuelto en queso crema y
+                               20 piezas kanikama tempura. 
+                            </p>
+                        </div>
+                        <div class="col-2 col-lg-3">
+                            <a href="#" id="delete-pedido" style="font-size: 20px; float: right; color: black;"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <hr class="divider" style="border: 1px solid rgb(179, 179, 179);">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="../Static/img/IMG-sushi-1.jpg" alt="" style="width: 100%; border: none; border-radius: 5px;">
+                        </div>
+                        <div class="col-10 col-lg-6">
+                            <h4>Promoción 80 piezas mixtas</h4>
+                            <p style="text-align: justify;">Detalles: 20 piezas tempura pollo, 20 piezas salmón crudo, 20 piezas pollo envuelto en queso crema y
+                               20 piezas kanikama tempura. 
+                            </p>
+                        </div>
+                        <div class="col-2 col-lg-3">
+                            <a href="#" id="delete-pedido" style="font-size: 20px; float: right; color: black;"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <hr class="divider" style="border: 1px solid rgb(179, 179, 179);">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="../Static/img/IMG-sushi-1.jpg" alt="" style="width: 100%; border: none; border-radius: 5px;">
+                        </div>
+                        <div class="col-10 col-lg-6">
+                            <h4>Promoción 80 piezas mixtas</h4>
+                            <p style="text-align: justify;">Detalles: 20 piezas tempura pollo, 20 piezas salmón crudo, 20 piezas pollo envuelto en queso crema y
+                               20 piezas kanikama tempura. 
+                            </p>
+                        </div>
+                        <div class="col-2 col-lg-3">
+                            <a href="#" id="delete-pedido" style="font-size: 20px; float: right; color: black;"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <hr class="divider" style="border: 1px solid rgb(179, 179, 179);">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="../Static/img/IMG-sushi-1.jpg" alt="" style="width: 100%; border: none; border-radius: 5px;">
+                        </div>
+                        <div class="col-10 col-lg-6">
+                            <h4>Promoción 80 piezas mixtas</h4>
+                            <p style="text-align: justify;">Detalles: 20 piezas tempura pollo, 20 piezas salmón crudo, 20 piezas pollo envuelto en queso crema y
+                               20 piezas kanikama tempura. 
+                            </p>
+                        </div>
+                        <div class="col-2 col-lg-3">
+                            <a href="#" id="delete-pedido" style="font-size: 20px; float: right; color: black;"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <hr class="divider" style="border: 2px solid rgb(0, 0, 0);">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="contenedor-metodos-pago" style="background-color: white; padding: 20px; max-height: 1000px; height: auto;
+                    border: none; border-radius: 3px;">
+                    <h1 class="title-metodo-pago" style="font-size: 25px; font-weight: normal;">Método de pago</h1>
+                    <hr class="divider" style="border: 2px solid rgb(0, 0, 0);">
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-12" style="align-items: center; text-align: center;">
+                            <button class="btn-pago" style="border: 2px solid black; width: 100%; border-radius: 5px;
+                                padding: 10px; font-size: 20px; transition: .4s ease all;"><i class="fas fa-university" style="font-size: 40px;"></i> Transferencia bancaria</button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-12" style="align-items: center; text-align: center;">
+                            <button class="btn-pago" style="border: 2px solid black; width: 100%; border-radius: 5px;
+                                padding: 10px; font-size: 20px; transition: .4s ease all;"><img src="../Static/img/IMG-webpay.png" alt="" style="width: 25%;"></button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-12" style="align-items: center; text-align: center;">
+                            <button class="btn-pago" style="border: 2px solid black; width: 100%; border-radius: 5px;
+                                padding: 10px; font-size: 20px; transition: .4s ease all;"><img src="../Static/img/IMG-paypal.png" alt="" style="width: 25%;"></button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-12" style="align-items: center; text-align: center;">
+                            <button class="btn-pago" style="border: 2px solid black; width: 100%; border-radius: 5px;
+                                padding: 10px; font-size: 20px; transition: .4s ease all;"><i class="far fa-money-bill-alt" style="font-size: 40px;"></i> Pago en efectivo</button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-12" style="align-items: center; text-align: center;">
+                            <button class="btn-pago" style="border: 2px solid black; width: 100%; border-radius: 5px;
+                                padding: 10px; font-size: 20px; transition: .4s ease all;"><i class="fas fa-truck" style="font-size: 40px;"></i> Ahorra retirando tu pedido</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="info-metodo-pago" class="col-12" style="text-align: center; padding: 10px 100px 20px 100px;">
+                            <p>Seleccione el método de pago más efectivo para finalizar su compra.</p>
+                            <p style="color: red;">No se realizarán entregas a domicilio pasada las 23:00 horas debido a la situación actual. 
+                               Tampoco se realizan despachos a comunas en cuarentena. 
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="margin-top: 25px;">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="contenedor-detalles-compra" style="background-color: white; padding: 20px; 
+                    max-height: 700px; border: none; border-radius: 3px;">
+                        <div class="row">
+                            <div class="col-10">
+                                <h3 class="title-promocion-comprar">Promoción 80 piezas mixtas</h3>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="valor-subtotal" style="float: right;">$15.990</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <h3 class="title-promocion-comprar">Promoción 80 piezas mixtas</h3>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="valor-subtotal" style="float: right;">$15.990</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <h3 class="title-promocion-comprar">Promoción 80 piezas mixtas</h3>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="valor-subtotal" style="float: right;">$15.990</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <h3 class="title-promocion-comprar">Promoción 80 piezas mixtas</h3>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="valor-subtotal" style="float: right;">$15.990</h3>
+                            </div>
+                        </div>
+
+                        <hr class="divider" style="border: 1px solid rgb(0, 0, 0);">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <input type="text" placeholder="Código de descuento..." style="width: auto;">
+                                <button class="btn-dscto" style="border: 1px solid black; background-color: red; 
+                                    color: white; border-radius: 3px; width: auto; padding: 3px;">Aplicar</button>
+                                <p style="display: flex; margin-top: 10px;">Descuento aplicado: NINGUNO</p>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="row">
+                                    <div class="col-lg-12 col-12">
+                                        <h3 class="title-subtotal-pagar" style="float: right;">Subtotal a pagar: $63.960</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-12">
+                                        <h3 class="descuento" style="float: right; color: red;">Descuento: $0</h3>
+                                    </div>
+                                </div>
+                                <hr class="divider" style="border: .5px solid rgb(0, 0, 0);">
+                                <div class="row">
+                                    <div class="col-lg-12 col-12">
+                                        <h3 class="total-pagar" style="float: right;">Total a pagar: $63.960</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="text-center contenedor-logo">
+                        <img src="../Static/img/LOGO-fukusuke (1).png" alt="" style="width: 350px; height: 350px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="text-center">
+        <button id="btnFooter" style="width: 100%; padding: 10px; border: none;
+            background-color: red; color: white;">Derechos de autor
+        </button>
+    </div>
+    <footer>
+        <div class="row footer" style="background-color: black; padding: 30px; display: none;">
+            <div class="col-12">
+                <div class="text-center">
+                    <img src="../Static/img/LOGO-fukusuke.png" alt="" style="width: 150px; height: 150px;">
+                    <br><br>
+                    <p style="color: white;">Todos los derechos reservados. @Copyright 2021.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    
+ 
+    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/hamburguer.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>
