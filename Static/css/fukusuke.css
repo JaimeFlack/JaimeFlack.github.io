@@ -2,19 +2,7 @@
     box-sizing: border-box;
     top: 0;
     left: 0;
-}/*
-::-webkit-scrollbar{
-    width: 7px;
 }
-::-webkit-scrollbar-track{
-    border: 10px solid black;
-    box-shadow: inset 0 0 2.5px 2px rgb(46, 46, 46);
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(255, 0, 0);
-    border-radius: 5px;
-    transition: .4s ease all;
-}*/
 body{
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
@@ -181,7 +169,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
 /* formulario contacto */
 .container-body .title-form{
     font-size: 25px;
-    color: black;
+    color: white;
     text-align: center;
 }
 .container-body .title-contactanos{
@@ -208,11 +196,11 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
 }
 .btn-xProducto{
     width: 100%; 
-    border: 2px solid black;
+    border: none;
     border-radius: 5px; 
     background-color: red; 
     color: white;
-    padding: 5px;
+    padding: 10px;
     transition: .4s ease all;
 }
 .card{
@@ -251,7 +239,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     header nav .mainMenu{
         height: 100vh;
         position: fixed;
-        top: -20px;
+        top: -100px;
         right: 0;
         left: 0;
         z-index: 200;
@@ -339,10 +327,11 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         font-size: 22px;
     }
     .title-contactanos{
-        font-size: 28px !important;
+        font-size: 20px !important;
     }
     .title-form{
-        font-size: 20px !important;
+        font-size: 16px !important;
+        margin-bottom: 20px !important;
     }
     .title-mapa{
         font-size: 20px;
@@ -380,10 +369,10 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         font-size: 23px;
     }
     .title-carta{
-        font-size: 25px;
+        font-size: 18px;
     }
     .title-filtrar{
-        font-size: 18px;
+        font-size: 15px;
     }
     .card{
         margin: 0px -50px 20px -50px;
@@ -418,6 +407,24 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
     .columna-trabaja{
         padding: 50px 0px 50px 0px !important;
+    }
+    .form-contacto{
+        max-height: 520px !important;
+        overflow-y: auto;
+    }
+    .card .title-promocion-x{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 13px;
+        padding: 0px 40px 0px 40px;
+    }
+    .card .valor-x-producto{
+        color: red;
+        font-size: 25px;
+    }
+    .contenedor-logo img{
+        display: none;
     }
 }
 #promotions-banner a p h2 {
