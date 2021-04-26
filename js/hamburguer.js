@@ -11,6 +11,6 @@ function show(){
     mainMenu.style.transition = '.3s ease all';
 }
 function close(){
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-500px';
     mainMenu.style.transition = '.3s ease all';
 }

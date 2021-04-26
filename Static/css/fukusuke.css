@@ -239,7 +239,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     header nav .mainMenu{
         height: 100vh;
         position: fixed;
-        top: -100px;
+        top: -500px;
         right: 0;
         left: 0;
         z-index: 200;
@@ -292,7 +292,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         display: none;
     }
     .columna-registro{
-        padding-top: 60px !important;
+        padding-top: 80px !important;
     }
     header{
         padding: 1px 0px 1px 0px;
@@ -381,13 +381,17 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
        display: none;
     }
     .columna-login{
-        padding: 150px 50px 150px 50px !important;
+        padding: 100px 40px 150px 50px !important;
     }
     .btn-registrarse{
         margin-top: 40px;
+        width: 100% !important;
+    }
+    .btn-acceder{
+        width: 100% !important;
     }
     .title-aboutUs{
-        font-size: 30px;
+        font-size: 20px;
     }
     .col-info1{
         margin-top: 20px;
@@ -425,6 +429,12 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
     .contenedor-logo img{
         display: none;
+    }
+    .title-info{
+        font-size: 20px !important;
+    }
+    .subtitle-info{
+        font-size: 14px !important;
     }
 }
 #promotions-banner a p h2 {
