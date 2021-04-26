@@ -282,8 +282,9 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
     header nav .mainMenu a li{
         margin-bottom: 10px;
-        font-size: 30px !important;
+        font-size: 20px !important;
         text-transform: uppercase;
+
     }
     header nav .mainMenu a:hover{
         text-decoration: none;
