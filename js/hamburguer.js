@@ -1,16 +1,21 @@
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
+function menuMobile(){
+    var btn_open_menuMobile = document.getElementById("btn-open-menuMobile");
+    var menu_mobile = document.getElementById("menuMobile");
+    var btn_close_menuMobile = document.getElementById("btn-close-menuMobile");
 
-openMenu.addEventListener("click", show);
-closeMenu.addEventListener("click", close);
-
-function show(){
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
-    mainMenu.style.transition = '.3s ease all';
+    btn_open_menuMobile.addEventListener("click", function(e){
+        e.preventDefault();
+        btn_open_menuMobile.style.left = "-1000px";
+        btn_close_menuMobile.style.left = "0px";
+        menu_mobile.style.left = "0px";
+        menu_mobile.style.transition = ".3s ease all";
+    });
+    btn_close_menuMobile.addEventListener("click", function(e){
+        e.preventDefault();
+        btn_close_menuMobile.style.left = "-1000px";
+        btn_open_menuMobile.style.left = "0px";
+        menu_mobile.style.left = "-1000px";
+        menu_mobile.style.transition = ".3s ease all";
+    });
 }
-function close(){
-    mainMenu.style.top = '-1000px';
-    mainMenu.style.transition = '.3s ease all';
-}
+menuMobile();

@@ -24,27 +24,41 @@
     <a href="#" id="btnToggle"><button class="btnToggle"><i class="fas fa-search" style="margin-right: 5px;"></i> Busca una promoción</button></a>
     <header>
         <nav>
-            <h1 class="logo-mobile">Fukusuke Sushi</h1>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <h1 class="logo-mobile"><img src="../Static/img/LOGO-fukusuke (1).png" alt="" style="width: 40px; height: 40px;"> Fukusuke Sushi</h1>
             <ul class="mainMenu">
-                <a href="../index.html"><li>Inicio</li></a>
-                <a href="../Templates/carta.html"><li>Carta</li></a>
-                <a href="../Templates/carrito-compra.html"><li>Carrito</li></a>
-                <a href="../index.html"><li><img class="logo" src="../Static/img/LOGO-fukusuke.png" alt=""></li></a>
-                <a href="../Templates/login-register.html"><li>Acceder</li></a>
-                <a href="../Templates/sobre-nosotros.html"><li>Sobre Nosotros</li></a>
-                <a href="../index.html #contacto"><li>Contacto</li></a>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-                <span class="icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fab fa-tiktok"></i>
-                </span>
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="Templates/carta.html"><li>Carta</li></a>
+                <a href="Templates/carrito-compra.html"><li>Carrito</li></a>
+                <a href="index.html"><li><img class="logo" src="Static/img/LOGO-fukusuke.png" alt=""></li></a>
+                <a href="Templates/login-register.html"><li>Acceder</li></a>
+                <a href="Templates/sobre-nosotros.html"><li>Sobre Nosotros</li></a>
+                <a href="#contacto"><li>Contacto</li></a>
             </ul>
         </nav>
     </header>
+    <div class="navMenuMobile" style="display: none;">
+        <div class="btn-menuMobile"><button class="btn-open-menuMobile" id="btn-open-menuMobile">
+            <i class="fas fa-bars"></i></button>
+        </div>
+        <div class="btn-menuMobile"><button class="btn-close-menuMobile" id="btn-close-menuMobile">
+            <i class="fas fa-times"></i></button>
+        </div>
+        <div class="bg-menuMobile" id="menuMobile" style="background-color: rgb(216, 216, 216);  position: fixed; z-index: 1000; margin-left: 15px; margin-top: 180px;
+            border: none; border-radius: 3px; padding: 20px; max-width: 250px; width: 250px; transition: .3s ease all; text-decoration: none;
+            list-style: none; left: -1000px; box-shadow: 5px 5px 24px rgb(19, 19, 19);">
+            <a href="../index.html" style="color: black; text-decoration: none;"><li>Inicio</li></a>
+            <hr>
+            <a href="../Templates/carta.html" style="color: black; text-decoration: none;"><li>Carta</li></a>
+            <hr>
+            <a href="../Templates/carrito-compra.html" style="color: black; text-decoration: none;"><li>Carrito</li></a>
+            <hr>
+            <a href="../Templates/login-register.html" style="color: black; text-decoration: none;"><li>Acceder</li></a>
+            <hr>
+            <a href="../Templates/sobre-nosotros.html" style="color: black; text-decoration: none;"><li>Sobre Nosotros</li></a>
+            <hr>
+            <a href="../index.html #contacto" style="color: black; text-decoration: none;"><li>Contacto</li></a>
+        </div>
+    </div>
     <section class="seccion-pedido" style="margin: 30px 50px 50px 50px;">
         <div class="row">
             <div class="col-12 col-lg-8">

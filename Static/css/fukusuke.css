@@ -236,30 +236,67 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
 }
 @media (max-width: 991px){
-    header nav .mainMenu{
-        height: 100vh;
+    .navMenuMobile{
+        display: unset !important;
+    }
+    .navMenuMobile .btn-menuMobile .btn-open-menuMobile{
+        border: none; 
+        background-color: rgb(216, 216, 216); 
+        border-radius: 50%; 
+        box-shadow: 5px 5px 20px black; 
+        padding: 10px; 
+        width: 50px; 
+        height: 50px;
+        transition: .2s ease all;
         position: fixed;
-        top: -500px;
-        right: 0;
-        left: 0;
-        z-index: 200;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0,0,0,0.995);
-        transition: .3s ease all;
+        z-index: 1000;
+        margin-top: 105px;
+        margin-left: 15px;
+    }
+    .navMenuMobile .btn-menuMobile .btn-open-menuMobile:hover{
+        background-color: red;
+        color: white;
+        transition: .2s ease all;
+    }
+    .navMenuMobile .btn-menuMobile .btn-open-menuMobile i{
+        font-size: 20px; 
+        color: black;
+    }
+    .navMenuMobile .btn-menuMobile .btn-open-menuMobile i:hover{
+        color: white;
+    }
+    .navMenuMobile .btn-menuMobile .btn-close-menuMobile{
+        border: none; 
+        background-color: rgb(216, 216, 216); 
+        border-radius: 50%; 
+        box-shadow: 5px 5px 20px black; 
+        padding: 10px; 
+        width: 50px; 
+        height: 50px;
+        transition: .2s ease all;
+        position: fixed;
+        z-index: 1000;
+        margin-top: 105px;
+        margin-left: 15px;
+        left: -1000px;
+    }
+    .navMenuMobile .btn-menuMobile .btn-close-menuMobile:hover{
+        background-color: red;
+        color: white;
+        transition: .2s ease all;
+    }
+    .navMenuMobile .btn-menuMobile .btn-close-menuMobile i{
+        font-size: 20px; 
+        color: black;
+    }
+    .navMenuMobile .btn-menuMobile .btn-close-menuMobile i:hover{
+        color: white;
+    }
+    header nav ul li{
         display: none;
     }
-    header nav .mainMenu .closeMenu{
-        display: block;
-        position: absolute;
-        top: 20px !important;
-        left: 20px !important;
-        color: white;
-        font-style: 40px !important;
-    }
-    header nav .openMenu{
-        display: block;
+    header{
+        height: 70px;
     }
     header nav .mainMenu .icons i{
         display: inline-block;
@@ -271,11 +308,11 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
     header nav .logo-mobile{
         display: unset;
-        float: right;
-        margin-right: 20px;
-        font-size: 25px;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
+        font-weight: normal;
     }
     header nav{
         align-items: center;
