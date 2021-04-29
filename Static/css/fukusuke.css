@@ -240,12 +240,13 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         display: unset !important;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile{
-        border: 2px solid red; 
-        background-color: rgb(216, 216, 216); 
+        border: 3px solid red; 
+        background-color: rgb(0, 0, 0);
+        color: white; 
         border-radius: 50%; 
         padding: 10px; 
-        width: 50px; 
-        height: 50px;
+        width: 60px; 
+        height: 60px;
         transition: .2s ease all;
         position: fixed;
         z-index: 1000;
@@ -253,19 +254,20 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         margin-left: 15px;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile i{
-        font-size: 20px; 
+        font-size: 25px; 
         color: black;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile i:hover{
         color: white;
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile{
-        border: 2px solid red; 
-        background-color: rgb(216, 216, 216); 
+        border: 3px solid red; 
+        background-color: rgb(0, 0, 0); 
+        color: white;
         border-radius: 50%; 
         padding: 10px; 
-        width: 50px; 
-        height: 50px;
+        width: 60px; 
+        height: 60px;
         transition: .2s ease all;
         position: fixed;
         z-index: 1000;
@@ -274,7 +276,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         left: -1000px;
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile i{
-        font-size: 20px; 
+        font-size: 25px; 
         color: black;
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile i:hover{
