@@ -249,7 +249,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         transition: .2s ease all;
         position: fixed;
         z-index: 1000;
-        margin-top: 105px;
+        margin-top: 100px;
         margin-left: 15px;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile i{
@@ -269,7 +269,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         transition: .2s ease all;
         position: fixed;
         z-index: 1000;
-        margin-top: 105px;
+        margin-top: 100px;
         margin-left: 15px;
         left: -1000px;
     }
