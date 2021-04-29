@@ -253,7 +253,7 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         margin-left: 15px;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile i{
-        font-size: 25px; 
+        font-size: 22px; 
         color: white; 
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile i:hover{
@@ -274,14 +274,15 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         left: -1000px;
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile i{
-        font-size: 25px; 
+        font-size: 22px; 
         color: white; 
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile i:hover{
         color: white;
     }
     .bg-menuMobile{
-        background-color: rgb(216, 216, 216);  
+        background-color: rgb(0, 0, 0);  
+        color: white;
         position: fixed; 
         z-index: 1000; 
         margin-left: 15px; 
