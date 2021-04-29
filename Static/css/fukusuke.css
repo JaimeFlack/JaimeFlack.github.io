@@ -240,10 +240,9 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         display: unset !important;
     }
     .navMenuMobile .btn-menuMobile .btn-open-menuMobile{
-        border: none; 
+        border: 2px solid red; 
         background-color: rgb(216, 216, 216); 
         border-radius: 50%; 
-        box-shadow: 5px 5px 20px black; 
         padding: 10px; 
         width: 50px; 
         height: 50px;
@@ -261,10 +260,9 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
         color: white;
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile{
-        border: none; 
+        border: 2px solid red; 
         background-color: rgb(216, 216, 216); 
         border-radius: 50%; 
-        box-shadow: 5px 5px 20px black; 
         padding: 10px; 
         width: 50px; 
         height: 50px;
@@ -281,6 +279,22 @@ header nav .mainMenu .icons .fa-tiktok:hover{color: red;}
     }
     .navMenuMobile .btn-menuMobile .btn-close-menuMobile i:hover{
         color: white;
+    }
+    .bg-menuMobile{
+        background-color: rgb(216, 216, 216);  
+        position: fixed; 
+        z-index: 1000; 
+        margin-left: 15px; 
+        margin-top: 180px;
+        border: none; 
+        border-radius: 3px; 
+        padding: 20px;
+        max-width: 250px; 
+        width: 250px; 
+        transition: .3s ease all; 
+        text-decoration: none;
+        list-style: none; left: -1000px;
+        box-shadow: 5px 5px 24px rgb(19, 19, 19);
     }
     header nav ul li{
         display: none;
