@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/all.css">
+    <link rel="stylesheet" href="../static/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/lightslider.css">
+    <title>Catálogo Noticias - BakAnime</title>
+</head>
+<body>
+    <!-- MENÙ MOBILE -->
+    <div class="contenedorGeneralMenuMobile" id="contenedorGeneralMenuMobilE" style="position: fixed; top: 9%; left: -100%; height: 100vh; width: 100%; z-index: 700; transition: .4s ease all;">
+        <div class="menu-mobile-box" style="background-color: rgb(33, 33, 33); padding: 25px 15px 15px 15px; width: 60%;">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" id="closeMobileMenu"><i class="fas fa-times" style="color: white; float: right; font-size: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENIDO MOBILE MENU -->
+        <div class="contentMobileMenuBox" id="menuMobileBox" style="background-color: rgb(33, 33, 33); color: rgb(255, 255, 255); padding: 10px 15px 25px 15px; width: 60%; height: 100vh;">
+            <a href="../index.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255);"><i class="fas fa-home"></i> Inicio</h5></a>
+            <hr>
+            <a href="catalogo.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255);"><i class="fas fa-book-open"></i> Catálogo Animes / Películas</h5></a>
+            <hr>
+            <a href="catalogo-noticia.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255);"><i class="fas fa-newspaper"></i> Catálogo Noticias</h5></a>
+            <hr>
+            <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255);"><i class="fas fa-paper-plane"></i> Solicitar Anime</h5></a>
+            <hr>
+            <a href="#" class="btn btn-danger" style="border: none; border-radius: 20px 0px 20px; padding: 10px 10px 4px 10px; background-color: red;"><h3 style="font-family: 'Bebas Neue', cursive; color: white; font-size: 20px;">
+                BAKANIME PLUS
+                <i class="fas fa-plus"></i></h3></a>
+            <br><br>
+            <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; height: 40px; font-family: 'Bebas Neue', cursive;">
+        </div>
+    </div>
+    
+    <!-- CAJA DE BÚSQUEDA -->
+    <div class="search-box" id="searchBox">
+        <div class="container">
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-11">
+                    <h4 style="color: rgb(255, 255, 255); font-family: 'Open Sans Condensed', sans-serif; margin-bottom: 15px;"><i class="fas fa-search" style="color: white; font-size: 20px;"></i> BUSCADOR</h4>
+                </div>
+                <div class="col-1">
+                    <a href="#" id="closeSearchBox"><i class="fas fa-angle-up" style="color: rgb(255, 255, 255); float: right;"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group container">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CAJA DE SOLICITUD ANIME -->
+    <div class="solicitud-box" id="solicitudBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 25px 10px 30px 10px; border-radius: 3px; position: fixed; z-index: 701; top: 7.8%; right: -200%; width: 500px; height: 100vh;">
+        <div class="row" style="padding: 10px;">
+            <div class="col-11">
+                <h5 style="color: white; font-family: 'Rubik Mono One', sans-serif;">HAS TU SOLICITUD AQUÍ</h5>
+            </div>
+            <div class="col-1">
+                <a href="#" id="btnCloseSolicitudBox"><i class="fas fa-angle-right" style="color: white; font-size: 20px;"></i></a>
+            </div>
+            <hr style="color: white;">
+        </div>
+        <div class="contenedor-form-solicitud">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre del Anime..." style="width: 100%;" required>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Temporada (Temporada X)..." style="width: 100%;" required>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Nombre de quien solicita (Nombre de Usuario)..." style="width: 100%;" required>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btrn btn-danger" type="submit" style="border-radius: 3px; border: none; padding: 13px 10px; width: 100%; float: right; font-size: 14px;"><i class="fas fa-paper-plane"></i> ENVIAR SOLICITUD</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- CAJA SUSCRIPCIÒN -->
+    <div class="suscribe-box" id="suscribeBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 10px 10px 30px 10px; border-radius: 3px; position: fixed; z-index: 701; top: 8.5%; right: -200%; width: 500px; height: 100vh;">
+        <div class="row" style="padding: 10px; margin-top: 10px;">
+            <div class="col-11">
+                <h5 style="color: white; font-family: 'Rubik Mono One', sans-serif;">SUSCRÍBETE Y DISFRUTA DE LA MEJOR CALIDAD SIN ANUNCIOS</h5>
+            </div>
+            <div class="col-1">
+                <a href="#" id="btnCloseSuscribeBox"><i class="fas fa-angle-right" style="color: white; font-size: 20px;"></i></a>
+            </div>
+            <hr style="color: white;">
+        </div>
+        <div class="contenedor-form-solicitud">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre de Usuario..." style="width: 100%;" required>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Correo Electrónico..." style="width: 100%;" required>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Contraseña..." style="width: 100%;" required>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Repetir contraseña..." style="width: 100%;" required>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btrn btn-danger" style="border-radius: 3px; border: none; padding: 13px 10px; width: 100%; float: right; font-size: 14px;"><i class="fas fa-check-double"></i> SUSCRIBIRME</button>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-row">
+                            <img src="https://www.pngkit.com/png/full/61-614664_rikka-takanashi-hd-background-images-wallpaper-rikka-takanashi.png" alt="" style="width: 75%;">
+                        </div>      
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- CAJA REDES SOCIALES -->
+    <!-- <div class="contenedor-socials">
+        <ul>
+            <li><a href="#">YouTube <i class="fab fa-youtube"></i></a></li>
+            <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+            <li><a href="#">TikTok <i class="fab fa-tiktok"></i></a></li>
+        </ul>
+    </div> -->
+    <!-- CAJA MODO -->
+    <!-- <div class="contenedor-modo" id="darkModeBox" style="position: fixed; left: -5px; top: 58%;">
+        <a href="#" id="darkMode" style="background-color: rgb(33, 1, 106); color: rgb(255, 191, 0); padding: 10px 15px; border-radius: 5px; transition: 1s ease all;"><i class="fas fa-moon" style="font-size: 20px;"></i></a>
+    </div> -->
+    <!-- CAJA ETIQUETA -->
+    <div class="contenedor-bakanime2022" style="position: absolute; left: -3.5%; top: 19%; transform: rotate(90deg);">
+        <a href="#"><h5 style="color: white; background-color: red; padding: 4px 6px;">BakAnime 2022</h5></a>
+    </div>
+    <!-- HEADER -->
+    <br><br><br>
+    <header class="fixed-top">
+        <a href="../index.html" style="text-decoration: none; padding-top: 10px; margin-right: auto;"><h5 style="color: white;"><span style="color: white; font-size: 23px;"> B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
+        <nav>
+            <ul>
+                <li class="li-header"><a href="#" id="btnMenuMobilE" style="float: right !important; margin-right: 0%; display: none;"><i class="fas fa-bars btnMobileMenu" style="color: white; display: none;"></i></a></li>
+                <li class="li-header"><a href="#" class="search" id="openSearchBox"><i class="fas fa-search"></i></a></li>
+                <li class="li-header"><a href="../templates/catalogo.html" class="btnCatalogo">CATÁLOGO ANIMES / PELÍCULAS</a></li>
+                <li class="li-header"><a href="#" class="btnCatalogo">CATÁLOGO NOTICIAS</a></li>
+                <li class="li-header"><a href="#" id="btnSolicitudBox" class="btnSolicitudBox">SOLICITAR ANIME</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btnSuscribe" id="btnSuscribeBox" style="color: white; background-color: rgb(222, 39, 11); padding: 7px; border: none; border-radius: 20px 0px 20px 0px; margin-left: 7px; font-size: 15px; transition: .2s ease all;">BAKANIME PLUS <i class="fas fa-plus"></i></a>
+    </header>
+
+    <section class="section-catalogo-noticias">
+        <main>
+            <div class="catalogo-noticias-container">
+                <div class="" style="background-color: rgb(18, 18, 18);">
+                    <h3 class="title-catalogo-animes" style="color: rgb(255, 255, 255); font-family: 'Bebas Neue', cursive; font-weight: lighter;"><i class="fas fa-clock" style="color: red;"></i> ÚLTIMAS NOTICIAS</h3>
+                    <hr style="color: rgb(255, 255, 255);">
+                    <div class="contenido-catalogo-noticias">
+                        <div class="row">
+                            <ul class="ul-slider" id="autoWidth" style="list-style: none;">
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://99px.ru/sstorage/53/2020/09/tmb_315278_338337.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="../templates/x-noticia.html" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Darling in the FranXX</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            Atsushi Nishigori, director de Darling in the FranXX, ya está preparando un nuevo proyecto
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://i.imgur.com/D5KvBd5l.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Kanojo mo Kanojo</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            Hiroyuki no propuso los patrones de las bragas de las chicas en el anime Kanojo mo Kanojo
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://i.pinimg.com/736x/87/2b/de/872bde5948914f2e51f0e91522896bd6.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Kanojo, Okarichimasu</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            Las chicas de Kanojo, Okarishimasu visten hermosa lencería para una colaboración
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://i.pinimg.com/736x/c8/26/e5/c826e538250218750f3ff07d797822d9.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Tate no Yuusha no Nariagari</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            La segunda temporada de Tate no Yuusha no Nariagari se retrasa hasta 2022
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://somoskudasai.com/wp-content/uploads/2021/07/portada_tonikaku-kawaii-32.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Tonikaku Kawaii</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            Tonikaku Kawaii lanza una veraniega ilustración especial de Tsukasa
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://pbs.twimg.com/media/Ef4zighX0AAKRWP.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Yahari Ore no Seishun Love Comedy wa Machigatteiru</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            Oregairu revela los detalles de la primera novela de la ruta de Yui Yuigahama
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://i.pinimg.com/originals/df/d9/ec/dfd9ecdffcb322ebd93c02af0e010542.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Hori-san to Miyamura-kun</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            El anime Horimiya revela los detalles de su último Blu-ray/DVD
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://1.bp.blogspot.com/-iauDPmsqA3w/YHJQVMO3agI/AAAAAAAAc1Q/q0u6Q-mjQGobxxhFtiOVmzafMS8pZaXegCLcBGAsYHQ/s1920/86%2B-%2BEighty%2BSix%2B-%2B86.mkv_snapshot_02.42.634.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">86: Eighty-Six</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            86: Eighty-Six revelará más información de su segunda temporada este mes
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                                <li class="item-a" style="height: 500px;">
+                                    <div class="boxN" style="width: 500px; height: 500px; border: none; border-radius: 0px; 
+                                        flex-direction: column; align-items: center; display: flex; justify-content: space-between; box-sizing: border-box; 
+                                        background: linear-gradient(rgba(0, 0, 0, 0.40) 10%, black 100%), url(https://www.egames.news/__export/1626058859836/sites/debate/img/2021/07/11/jujutsu_kaisen_5_cosas_que_yuji_itadori_puede_hacer_sin_el_poder_de_sukuna.jpg_1902800913.jpg); background-size: cover;
+                                        background-position: center center; transition: .5s ease all;">
+                                        <a href="#" class="btn btn-danger btnLeerMas" style="background-color: transparent; border: none; border-radius: 0px; width: auto; font-size: 20px; font-family: 'Bebas Neue', cursive; margin-right: 0; text-align: right !important;
+                                        opacity: 0; transition: .3s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right" style="color: red;"></i></a>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 250px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);">Jujutsu Kaisen</p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-clock" style="color: rgba(255, 255, 255, 0.730);"></i> Martes 10 Agosto, 2021.</p>
+                                        <p class="temporada" style="font-size: 32px; padding: 0px 30px; margin: 0px auto 0px auto; text-align: left;">
+                                            El anime Jujutsu Kaisen celebra un millón de seguidores en Twitter
+                                        </p>
+                                        <p class="temporadaN" style="font-size: 13px; padding: 0px 30px; margin: 0px auto 30px auto; text-align: left; color: rgba(255, 255, 255, 0.730);"><i class="fas fa-user" style="color: rgba(255, 255, 255, 0.730);"></i> LindaREM.</p>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <h3 class="title-catalogo-animes" style="color: rgb(255, 255, 255); font-family: 'Bebas Neue', cursive; font-weight: lighter;"><i class="fas fa-newspaper" style="color: red;"></i> TODAS LAS NOTICIAS</h3>
+                    <hr style="color: rgb(255, 255, 255);">
+                    <div class="contenido-catalogo-noticias">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card card-noticia-catalogo" style="border: none; border-radius: 5px; background-color: rgb(246, 246, 246); margin-bottom: 20px; height: auto; border-radius: 0px;">
+                                    <div class="content-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 20px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">Darling in the FranXX</p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    <i class="fas fa-clock" style="color: rgba(0, 0, 0, 0.73);"></i> 
+                                                    Jueves 12 Agosto, 2021.
+                                                </p>
+                                                <p class="txtXNT" style="font-size: 32px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left;">
+                                                    Atsushi Nishigori, ya está preparando un nuevo proyecto
+                                                </p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);"><i class="fas fa-user" style="color: rgba(0, 0, 0, 0.73);"></i> LindaREM.</p>
+                                                <hr>
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    El portal de la revista Web Newtype publicó un artículo titulado «Entrevista con Atsushi Nishigori,
+                                                    director de animación en jefe y diseñador de personajes de Rebuild of Evangelion».
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <a href="../templates/x-noticia.html" class="btn btn-danger btnLeerMasXN" style="background-color: red; border: 5px solid rgba(255, 0, 0, 0.7); border-radius: 0px 20px 0px 0px; width: auto; font-size: 20px; 
+                                                            font-family: 'Bebas Neue', cursive; margin-right: 0; color: rgb(255, 255, 255); float: left; transition: .4s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right iXN" style="color: rgb(255, 255, 255); transition: .4s ease-in-out;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <section class="imgXN" style="background: url(https://99px.ru/sstorage/53/2020/09/tmb_315278_338337.jpg); 
+                                                width: 100%; background-size: cover; height: 100%; border-radius: 0px; background-position: center center; background-size: cover;"></section>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card card-noticia-catalogo" style="border: none; border-radius: 5px; background-color: rgb(246, 246, 246); margin-bottom: 20px; height: auto; border-radius: 0px;">
+                                    <div class="content-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 20px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">Re:Zero</p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    <i class="fas fa-clock" style="color: rgba(0, 0, 0, 0.73);"></i> 
+                                                    Jueves 12 Agosto, 2021.
+                                                </p>
+                                                <p class="txtXNT" style="font-size: 32px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left;">
+                                                    Ram se viste de cortesana para una espectacular figura
+                                                </p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);"><i class="fas fa-user" style="color: rgba(0, 0, 0, 0.73);"></i> LindaREM.</p>
+                                                <hr>
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    La hermosa Ram, hermana mayor de Rem de Re:Zero, protagonizó una bella figurita
+                                                    vestida con una llamativa, colorida y bella cortesana japonesa.
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-danger btnLeerMasXN" style="background-color: red; border: 5px solid rgba(255, 0, 0, 0.7); border-radius: 0px 20px 0px 0px; width: auto; font-size: 20px; 
+                                                            font-family: 'Bebas Neue', cursive; margin-right: 0; color: rgb(255, 255, 255); float: left; transition: .4s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right iXN" style="color: rgb(255, 255, 255); transition: .4s ease-in-out;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <section class="imgXN" style="background: url(https://somoskudasai.com/wp-content/uploads/2021/08/A2-2.jpg); 
+                                                width: 100%; background-size: cover; height: 100%; background-position: center center; background-size: cover;"></section>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card card-noticia-catalogo" style="border: none; border-radius: 5px; background-color: rgb(246, 246, 246); margin-bottom: 20px; height: auto; border-radius: 0px;">
+                                    <div class="content-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 20px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">Tate no Yuusha no Nariagari</p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    <i class="fas fa-clock" style="color: rgba(0, 0, 0, 0.73);"></i> 
+                                                    Jueves 12 Agosto, 2021.
+                                                </p>
+                                                <p class="txtXNT" style="font-size: 32px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left;">
+                                                    Raphtalia inspira una sensual figura
+                                                </p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);"><i class="fas fa-user" style="color: rgba(0, 0, 0, 0.73);"></i> LindaREM.</p>
+                                                <hr>
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    La bella acompañante del protagonista del anime Tate no Yuusha no Nariagari, fue insipración para
+                                                    la fabricación de una sensual figurita. El creador la eligió por sus, y cito, "excelentes curvas".
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-danger btnLeerMasXN" style="background-color: red; border: 5px solid rgba(255, 0, 0, 0.7); border-radius: 0px 20px 0px 0px; width: auto; font-size: 20px; 
+                                                            font-family: 'Bebas Neue', cursive; margin-right: 0; color: rgb(255, 255, 255); float: left; transition: .4s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right iXN" style="color: rgb(255, 255, 255); transition: .4s ease-in-out;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <section class="imgXN" style="background: url(https://somoskudasai.com/wp-content/uploads/2021/08/A2-2.jpg); 
+                                                width: 100%; background-size: cover; height: 100%; background-position: center center; background-size: cover;"></section>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card card-noticia-catalogo" style="border: none; border-radius: 5px; background-color: rgb(246, 246, 246); margin-bottom: 20px; height: auto; border-radius: 0px;">
+                                    <div class="content-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 20px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">Tate no Yuusha no Nariagari</p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    <i class="fas fa-clock" style="color: rgba(0, 0, 0, 0.73);"></i> 
+                                                    Jueves 12 Agosto, 2021.
+                                                </p>
+                                                <p class="txtXNT" style="font-size: 32px; padding: 0px 10px; margin: 0px auto 0px auto; text-align: left;">
+                                                    Raphtalia inspira una sensual figura
+                                                </p>
+                                                <p class="txtXN" style="font-size: 13px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);"><i class="fas fa-user" style="color: rgba(0, 0, 0, 0.73);"></i> LindaREM.</p>
+                                                <hr>
+                                                <p class="txtXN" style="font-size: 14px; padding: 0px 10px; margin: 0px auto 20px auto; text-align: left; color: rgba(0, 0, 0, 0.73);">
+                                                    La bella acompañante del protagonista del anime Tate no Yuusha no Nariagari, fue insipración para
+                                                    la fabricación de una sensual figurita. El creador la eligió por sus, y cito, "excelentes curvas".
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-danger btnLeerMasXN" style="background-color: red; border: 5px solid rgba(255, 0, 0, 0.7); border-radius: 0px 20px 0px 0px; width: auto; font-size: 20px; 
+                                                            font-family: 'Bebas Neue', cursive; margin-right: 0; color: rgb(255, 255, 255); float: left; transition: .4s ease-in-out;">Noticia completa <i class="fas fa-angle-double-right iXN" style="color: rgb(255, 255, 255); transition: .4s ease-in-out;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <section class="imgXN" style="background: url(https://somoskudasai.com/wp-content/uploads/2021/08/A2-2.jpg); 
+                                                width: 100%; background-size: cover; height: 100%; background-position: center center; background-size: cover;"></section>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <a href="#" id="irArriba" class="btn irArriba" style="background-color: red; color: white; border: none; border-radius: 0px; 
+        width: 40px; height: 40px; padding-top: 7px; position: fixed; bottom: 10%; right: 7%; display: none;"><i class="fas fa-angle-up"></i>
+    </a>
+    <footer>
+        <div class="footer" style="background-color: rgb(25, 25, 25); padding: 20px;">
+            <div class="container" style="padding: 5px;">
+                <div class="row">
+                    <div class="col-6 col-lg-1">
+                        <a href="#" style="text-decoration: none; padding-top: 10px; margin-right: auto;"><h5 style="color: white;"><span style="color: white; font-size: 23px;">B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-6">
+                        <p style="color: white; font-size: 10px;">Ningúno de los animes en esta página están alojados en nuestros servidores.</p>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                        <p style="color: white; float: right; font-size: 12px;">Todos los derechos reservados. 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/JQuery3.3.1.js"></script>
+    <script src="../static/js/all.js"></script>
+    <script src="../static/js/all.min.js"></script>
+    <script src="../static/js/fontawesome.js"></script>
+    <script src="../static/js/fontawesome.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/lightslider.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                } 
+            });  
+        });
+
+        $(document).ready(function() {
+            $('.irArriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                });
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 600 ){
+                    $('.irArriba').slideDown(300);
+                }else{
+                    $('.irArriba').slideUp(300);
+                }
+            });
+        });
+
+        function openSearchBox(){
+            const searchBox = document.getElementById("searchBox");
+            const btnOpenSearchBox = document.getElementById("openSearchBox");
+            const closeSearchBox = document.getElementById("closeSearchBox");
+
+            btnOpenSearchBox.addEventListener("click", function(event){
+                event.preventDefault();
+                searchBox.style.top = "7.5%";
+                searchBox.style.transition = ".5s ease all";
+            });
+
+            closeSearchBox.addEventListener("click", function(event){
+                event.preventDefault();
+                searchBox.style.top = "-200%";
+                searchBox.style.transition = ".8s ease all";
+            });
+        }
+        openSearchBox();
+
+        function openSolicitudBox(){
+            const solicitudBox = document.getElementById("solicitudBox");
+            const btnOpenSolicitudBox = document.getElementById("btnSolicitudBox");
+            const closeSolicitudBox = document.getElementById("btnCloseSolicitudBox");
+
+            btnOpenSolicitudBox.addEventListener("click", function(event){
+                event.preventDefault();
+                solicitudBox.style.right = "0%";
+                solicitudBox.style.transition = ".5s ease all";
+            });
+
+            closeSolicitudBox.addEventListener("click", function(event){
+                event.preventDefault();
+                solicitudBox.style.right = "-200%";
+                solicitudBox.style.transition = ".8s ease all";
+            });
+        }
+        openSolicitudBox();
+
+        function openSuscribeBox(){
+            const suscribeBox = document.getElementById("suscribeBox");
+            const btnOpenSuscribeBox = document.getElementById("btnSuscribeBox");
+            const closeSuscribeBox = document.getElementById("btnCloseSuscribeBox");
+
+            btnOpenSuscribeBox.addEventListener("click", function(event){
+                event.preventDefault();
+                suscribeBox.style.right = "0%";
+                suscribeBox.style.transition = ".5s ease all";
+            });
+
+            closeSuscribeBox.addEventListener("click", function(event){
+                event.preventDefault();
+                suscribeBox.style.right = "-200%";
+                suscribeBox.style.transition = ".8s ease all";
+            });
+        }
+        openSuscribeBox();
+
+        function openMenuMobile(){
+            const btnMenuMobilE = document.getElementById("btnMenuMobilE");
+            const contenedorGeneralMenuMobilE = document.getElementById("contenedorGeneralMenuMobilE");
+            const closeMobileMenu = document.getElementById("closeMobileMenu");
+
+            btnMenuMobilE.addEventListener("click", function(event){
+                event.preventDefault();
+                contenedorGeneralMenuMobilE.style.left = "0%";
+                contenedorGeneralMenuMobilE.style.transition = ".4s ease all";
+            });
+
+            closeMobileMenu.addEventListener("click", function(event){
+                event.preventDefault();
+                contenedorGeneralMenuMobilE.style.left = "-100%";
+                contenedorGeneralMenuMobilE.style.transition = ".4s ease all";
+            });
+        }
+        openMenuMobile();
+
+    </script>
+
+</body>
+</html>
