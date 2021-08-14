@@ -473,7 +473,7 @@ header nav ul li a:hover{
     .title-catalogo-movies,
     .title-catalogo-animes,
     .noticias-x-anime{
-        font-size: 17px !important;
+        font-size: 22px !important;
     }
     .contenido-catalogo-noticias .card-anime-catalogo{
         margin-bottom: 50px !important;
@@ -597,13 +597,19 @@ header nav ul li a:hover{
     }
     .season, 
     .year{
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     .subtitle-banner .btnDescargarBanner{
         display: none !important;
     }
     .boton-mobile-descargar{
         display: unset !important;
+    }
+    .card-pelicula-index p{
+        font-size: 12px !important;
+    }
+    .card-pelicula-index h6{
+        font-size: 14px !important;
     }
 }
 @media (max-width: 450px){
