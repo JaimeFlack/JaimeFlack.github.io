@@ -20,10 +20,6 @@ button{
     text-decoration: none;
     letter-spacing: -0.5px;
 }
-.btnSuscribe:hover{
-    padding: 7px 10px !important;
-    transition: .2s ease all !important;
-}
 header{
     display: flex;
     justify-content: flex-end;
@@ -91,7 +87,7 @@ header nav ul li a:hover{
     background-color: rgb(33, 33, 33);
     padding: 30px 20px;
     border-radius: 3px;
-    z-index: 600;
+    z-index: 702;
 }
 .container-box{
     display: flex;
@@ -168,7 +164,8 @@ header nav ul li a:hover{
     margin-right: 10px;
     font-size: 17px;
 }
-.btn-mas-animes:hover{
+.btn-mas-animes:hover,
+.btn-mas-peliculas:hover{
     width: 21% !important;
     transition: .2s ease all !important;
 }
@@ -269,8 +266,26 @@ header nav ul li a:hover{
     color: white !important;
     transition: .4s ease-in-out !important;
 }
+.contenedor-form-solicitud input::placeholder{
+    transition: .3s ease-out !important;
+}
+.contenedor-form-solicitud input:focus::placeholder{
+    transform: translateY(-20px);
+    transition: .3s ease-out;
+    font-size: 12px;
+}
+.contenedor-form-solicitud input:focus{
+    border: none !important;
+    border-bottom: 1px solid rgb(154, 154, 154) !important;
+}
 /* ŒMEDIAS */
 @media (max-width: 570px){
+    .card-content-pelicula button{
+        font-size: 22px !important;
+    }
+    .contenedor-form-solicitud input:focus::placeholder{
+        transform: translateY(0px);
+    }
     .index-container .container-box a{
         font-size: 11px !important;
     }
@@ -286,7 +301,7 @@ header nav ul li a:hover{
     }
     header{
         box-shadow: none;
-        padding: 0px 0px 0px 4% !important;
+        padding: 5px 0px 5px 4% !important;
     }
     header nav ul li{
         display: inline-block;
@@ -307,14 +322,14 @@ header nav ul li a:hover{
     }
     .title-banner{
         text-align: left !important;
-        top: 16% !important;
+        top: 15% !important;
         left: 10px !important;
     }
     .title-banner .pIndexSinopsis{
         display: none !important;
     }
     .title-banner h1{
-        font-size: 27px !important;
+        font-size: 25px !important;
     }
     .title-banner h4{
         font-size: 12px !important;
@@ -352,7 +367,18 @@ header nav ul li a:hover{
     }
     .suscribe-box{
         width: 100% !important;
-        background-color: rgba(0, 0, 0, 0.930) !important;
+        top: 2% !important;
+    }
+    .titleSuscribeBox{
+        font-size: 27px !important;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive !important;
+    }
+    .titleDatosSuscribe{
+        margin-top: 10px !important;
+    }
+    .contenedor-form-solicitud input{
+        height: 30px !important;
     }
     .comentarios{
         margin-top: 50px !important;
@@ -414,7 +440,7 @@ header nav ul li a:hover{
         height: 120px !important;
     }
     .container-peliculas{
-        margin-top: 20px !important;
+        margin-top: 15px !important;
     }
     .content-hover{
         opacity: 1 !important;
@@ -497,6 +523,7 @@ header nav ul li a:hover{
     .title-catalogo-animes,
     .noticias-x-anime{
         font-size: 22px !important;
+        letter-spacing: 1px;
     }
     .contenido-catalogo-noticias .card-anime-catalogo{
         margin-bottom: 50px !important;
@@ -573,21 +600,14 @@ header nav ul li a:hover{
     }
     .btn-mas-animes,
     .btn-mas-peliculas{
-        font-size: 14px !important;
+        font-size: 17px !important;
         margin-top: 5px !important;
         border-radius: 0px 0px 20px 20px !important;
         padding: 8px 10px !important;
         width: 100% !important;
     }
-    .btn-mas-peliculas{
-        font-size: 14px !important;
-        margin-top: 5px !important;
-        border-radius: 0px 0px 20px 20px !important;
-        padding: 8px 10px !important;
-        width: 100% !important;
-        margin-top: -5px !important;
-    }
-    .btn-mas-animes:hover{
+    .btn-mas-animes:hover,
+    .btn-mas-peliculas:hover{
         font-size: 14px !important;
         margin-top: 5px !important;
         border-radius: 0px 0px 20px 20px !important;
@@ -627,6 +647,18 @@ header nav ul li a:hover{
     }
     .boton-mobile-descargar{
         display: unset !important;
+    }
+    .mas-buscados h4{
+        margin-bottom: 15px !important;
+    }
+    #closeSearchBoxMobile{
+        font-size: 20px !important;
+    }
+    .icon{
+        font-size: 17px !important;
+    }
+    #btnCloseSuscribeBox{
+        margin-top: 10px;
     }
 }
 @media (max-width: 450px){
