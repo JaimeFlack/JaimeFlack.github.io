@@ -13,16 +13,14 @@
     <link rel="stylesheet" href="static/css/lightslider.css">
     <title>Descargar Anime Gratis - BakAnime</title>
 </head>
-<body>
+<body id="body">
     <!-- MENÙ MOBILE -->
-    <div class="contenedorGeneralMenuMobile" id="contenedorGeneralMenuMobilE" style="position: fixed; top: 0%; left: -100%; height: 100vh; width: 100%; z-index: 5000; transition: .4s ease all;">
-        <div class="menu-mobile-box" style="background-color: rgb(33, 33, 33); padding: 10px 15px 15px 15px; width: 100%;">
+    <div class="contenedorGeneralMenuMobile" id="contenedorGeneralMenuMobilE" style="position: fixed; top: 6%; left: -100%; height: 100vh; width: 100%; z-index: 5000; transition: .4s ease all;">
+        <div class="menu-mobile-box" style="background-color: rgb(33, 33, 33); padding: 25px 25px 15px 25px; width: 100%;">
             <div class="row">
-                <div class="col-10">
-                    <h1 style="color: white; font-family: 'Bebas Neue', cursive; letter-spacing: 2px;">Menú</h1>
-                </div>
-                <div class="col-2">
-                    <a href="#" id="closeMobileMenu"><i class="fas fa-times" style="color: white; float: right; font-size: 20px;"></i></a>
+   
+                <div class="col-12">
+                    <a href="#" id="closeMobileMenu" style="float: right !important;"><i class="fas fa-times" style="color: white; float: right; font-size: 25px;"></i></a>
                 </div>
             </div>
         </div>
@@ -36,7 +34,8 @@
             <hr>
             <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 2px;"><i class="fas fa-paper-plane"></i> Solicitar Anime</h5></a>
             <hr>
-            <a href="#" class="btn btn-danger" style="border: none; border-radius: 20px 0px 20px; padding: 10px 10px 4px 10px; background-color: red; letter-spacing: 2px;"><h3 style="font-family: 'Bebas Neue', cursive; color: white; font-size: 20px;">
+            <br>
+            <a href="#" id="btnSuscribeMobile" class="btn btn-danger" style="border: none; border-radius: 20px 0px 20px; padding: 10px 10px 4px 10px; background-color: red; letter-spacing: 2px; width: 100%;"><h3 style="font-family: 'Bebas Neue', cursive; color: white; font-size: 20px;">
                 BAKANIME PLUS
                 <i class="fas fa-plus"></i></h3></a>
         </div>
@@ -50,35 +49,36 @@
                     <h4 style="color: rgb(255, 255, 255); font-family: 'Open Sans Condensed', sans-serif; margin-bottom: 15px;"><i class="fas fa-search" style="color: white; font-size: 20px;"></i> BUSCADOR</h4>
                 </div>
                 <div class="col-1">
-                    <a href="#" id="closeSearchBox"><i class="fas fa-angle-up" style="color: rgb(255, 255, 255); float: right;"></i></a>
+                    <a href="#" id="closeSearchBox"><i class="fas fa-angle-up" style="color: rgb(255, 255, 255); float: right; font-size: 20px;"></i></a>
                 </div>
             </div>
         </div>
-        
         <div class="form-group container">
             <div class="row">
-                <div class="col-12">
-                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" 
-                    style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; border-top: none !important; border-left: none !important; border-right: none !important; border-bottom: 1px solid white !important;">
+                <div class="col-11">
+                    <input class="input-search-box" type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" 
+                    style="padding: 6px 10px; color: rgb(255, 255, 255); width: 100% !important; background: none; border: none; border-bottom: 1.5px solid rgba(255, 255, 255, 0.600);">
+                </div>
+                <div class="col-1">
+                    <a href="#" class="btn btn-danger" style="background: red; color: white; height: 100%; width: 100%; border-radius: 0%; border: none;">BUSCAR</a>
                 </div>
             </div>
         </div>
-
         <br><br>
         <div class="mas-buscados">
             <div class="container">
-                <h4 style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Animes más buscados</h4>
+                <h4 style="color: white; font-family: 'Open Sans Condensed', sans-serif; margin-bottom: 20px;">Animes más buscados</h4>
                 <div class="row">
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2019</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://www.srgeekarg.com/wp-content/uploads/2020/04/7362e7febc543c419809f16203796d60.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</p>
                                 </div>
                             </div>
                         </a>
@@ -88,67 +88,67 @@
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2020</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://tioanime.com/uploads/portadas/3342.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> 
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2021</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://cdn.jkanime.net/assets/images/animes/image/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-ova.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen OVA</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> 
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">Octubre 2021</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="https://pbs.twimg.com/media/ElUlGfzVkAA-yv2.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 3rd Season</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> 
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2021</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://tioanime.com/uploads/portadas/3452.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Wonder Egg Priority</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
-                        <a href="#">
+                        <a href="../templates/x-anime.html">
                             <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2019</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://static.wikia.nocookie.net/doblaje/images/4/46/DARLING_in_the_FRANXX_.jpg/revision/latest?cb=20190701191924&path-prefix=es" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Darling in the FranXX</p>
                                 </div>
                             </div>
                         </a>
@@ -159,9 +159,9 @@
     </div>
 
     <!-- CAJA DE BÚSQUEDA MOBILE -->
-    <div class="search-box" id="searchBoxMobile" style="overflow: auto !important; height: 100%;">
+    <div class="search-box" id="searchBoxMobile" style="overflow: auto !important; height: 100%; padding-top: 30px;">
         <div class="container">
-            <div class="row" style="margin-bottom: 10px;">
+            <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
                 <div class="col-10">
                     <h4 style="color: rgb(255, 255, 255); font-family: 'Open Sans Condensed', sans-serif; margin-bottom: 15px;"><i class="fas fa-search" style="color: white; font-size: 20px;"></i> BUSCADOR</h4>
                 </div>
@@ -170,16 +170,14 @@
                 </div>
             </div>
         </div>
-        
-        <div class="form-group container">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" 
-                    style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; border-top: none !important; border-left: none !important; border-right: none !important; border-bottom: 1px solid white !important;">
+                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" 
+                    style="padding: 6px 10px; color: rgb(255, 255, 255); width: 100% !important; background: none; border: none; border-bottom: 1.5px solid rgba(255, 255, 255, 0.805);">
                 </div>
             </div>
         </div>
-
         <br>
         <div class="mas-buscados">
             <div class="container">
@@ -187,56 +185,84 @@
                 <div class="row">
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
-                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2019</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://www.srgeekarg.com/wp-content/uploads/2020/04/7362e7febc543c419809f16203796d60.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
                         <a href="#">
-                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2020</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://tioanime.com/uploads/portadas/3342.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">2021</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://cdn.jkanime.net/assets/images/animes/image/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-ova.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen OVA</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2021</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="https://pbs.twimg.com/media/ElUlGfzVkAA-yv2.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 3rd Season</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">2021</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://tioanime.com/uploads/portadas/3452.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Wonder Egg Priority</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4 col-sm-4">
-                        <a href="#">
-                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                        <a href="../templates/x-anime.html">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
                                 <div class="card-image">
                                     <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
+                                        <p class="p1">2019</p>
                                     </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
-                        <a href="#">
-                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
-                                <div class="card-image">
-                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
-                                        <p class="p1">Octubre 2022</p>
-                                    </div>
-                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
-                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
-                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(193, 0, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-stop"></i> Finalizado</h6>
+                                    <img src="https://static.wikia.nocookie.net/doblaje/images/4/46/DARLING_in_the_FRANXX_.jpg/revision/latest?cb=20190701191924&path-prefix=es" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Darling in the FranXX</p>
                                 </div>
                             </div>
                         </a>
@@ -247,7 +273,8 @@
     </div>
 
     <!-- CAJA DE SOLICITUD ANIME -->
-    <div class="solicitud-box" id="solicitudBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 25px 10px 30px 10px; border-radius: 3px; position: fixed; z-index: 701; top: 7.8%; right: -200%; width: 500px; height: 100vh;">
+    <div class="solicitud-box" id="solicitudBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 25px 10px 30px 10px; border-radius: 3px; 
+    position: fixed; z-index: 701; top: 7.8%; right: -200%; width: 500px; height: 100vh;">
         <div class="row" style="padding: 10px;">
             <div class="col-11">
                 <h5 style="color: white; font-family: 'Rubik Mono One', sans-serif;">HAS TU SOLICITUD AQUÍ</h5>
@@ -276,43 +303,58 @@
         </div>
     </div>
     <!-- CAJA SUSCRIPCIÒN -->
-    <div class="suscribe-box" id="suscribeBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 10px 10px 30px 10px; border-radius: 3px; position: fixed; z-index: 701; top: 8.5%; right: -200%; width: 500px; height: 100vh;">
-        <div class="row" style="padding: 10px; margin-top: 10px;">
-            <div class="col-11">
-                <h5 style="color: white; font-family: 'Rubik Mono One', sans-serif;">SUSCRÍBETE Y DISFRUTA DE LA MEJOR CALIDAD SIN ANUNCIOS</h5>
-            </div>
-            <div class="col-1">
-                <a href="#" id="btnCloseSuscribeBox"><i class="fas fa-angle-right" style="color: white; font-size: 20px;"></i></a>
-            </div>
-            <hr style="color: white;">
-        </div>
-        <div class="contenedor-form-solicitud">
-            <form action="" method="POST">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nombre de Usuario..." style="width: 100%;" required>
-                    <br>
-                    <input type="text" class="form-control" placeholder="Correo Electrónico..." style="width: 100%;" required>
-                    <br>
-                    <input type="text" class="form-control" placeholder="Contraseña..." style="width: 100%;" required>
-                    <br>
-                    <input type="text" class="form-control" placeholder="Repetir contraseña..." style="width: 100%;" required>
+    <div class="suscribe-box" id="suscribeBox" style="background-color: rgb(33, 33, 33);
+        padding: 40px; border-radius: 3px; position: fixed; z-index: 701; top: 8.5%; right: -200%; width: 100%; height: 100vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 col-lg-11">
+                    <h1 class="titleSuscribeBox" style="color: rgb(255, 255, 255); font-family: 'Open Sans Condensed', sans-serif; margin-top: 10px;">SUSCRÍBETE Y DISFRUTA DE LA MEJOR CALIDAD SIN ANUNCIOS</h1>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-12">
-                        <button class="btrn btn-danger" style="border-radius: 3px; border: none; padding: 13px 10px; width: 100%; float: right; font-size: 14px;"><i class="fas fa-check-double"></i> SUSCRIBIRME</button>
+                <div class="col-3 col-lg-1">
+                    <a href="#" id="btnCloseSuscribeBox" style="float: right !important;"><i class="fas fa-angle-double-right" style="color: rgb(255, 255, 255); font-size: 20px;"></i></a>
+                </div>
+                <hr style="color: rgb(255, 255, 255);">
+            </div>
+            <div class="row" style="height: 100vh;">
+                <div class="col-12 col-lg-6" style="padding: 15px; border: none; border-radius: 5px;">
+                    <h4 class="titleDatosSuscribe" style="font-family: 'Open Sans Condensed', sans-serif; color: white; margin-top: 50px;">INGRESA LOS SIGUIENTES DATOS</h4>
+                    <br>
+                    <div class="contenedor-form-solicitud">
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nombre de usuario..." style="width: 100%; 
+                                border: none; border-bottom: 1px solid rgb(154, 154, 154); color: rgb(255, 255, 255); background: none; height: 60px;" required>
+                                <br><br>
+                                <input type="text" placeholder="Correo electrónico..." style="width: 100%; 
+                                border: none; border-bottom: 1px solid rgb(154, 154, 154); color: rgb(255, 255, 255); background: none; height: 60px;" required>
+                                <br><br>
+                                <input type="text" placeholder="Contraseña..." style="width: 100%; border: none; 
+                                border-bottom: 1px solid rgb(154, 154, 154); color: rgb(255, 255, 255); background: none; height: 60px;" required>
+                                <br><br>
+                                <input type="text" placeholder="Repetir contraseña..." style="width: 100%; border: none; 
+                                border-bottom: 1px solid rgb(154, 154, 154); color: rgb(255, 255, 255); background: none; height: 60px;" required>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="btrn btn-danger btnSuscribirse" type="submit" style="border-radius: 20px 0px 20px 0px; border: none; padding: 13px 10px; width: 100%; float: right; font-size: 14px;
+                                    background-color: cyan; color: rgb(33, 33, 33) !important; transition: .3s ease-out; margin-bottom: 8px;"><i class="fas fa-check-double"></i> SUSCRIBIRME</button>
+                                    <br>
+                                    <button id="btnCancelSuscribeBox" class="btrn btn-danger btnSuscribirse" style="border-radius: 0px 20px 0px 20px; border: none; padding: 13px 10px; width: 100%; float: right; font-size: 14px;
+                                    background-color: red; color: white; transition: .3s ease-out;"><i class="fas fa-times"></i> CANCELAR</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex flex-row">
-                            <img src="https://www.pngkit.com/png/full/61-614664_rikka-takanashi-hd-background-images-wallpaper-rikka-takanashi.png" alt="" style="width: 75%;">
-                        </div>      
-                    </div>
+                <div class="col-12 col-lg-6">
+                    <img src="http://getintopik.com/wp-content/uploads/2020/12/Free-Zero-Two-Transparent-Images-PNG.png" alt="" style="width: 100%;">
+                    
                 </div>
-            </form>
+            </div>
         </div>
+            
+        
     </div>
     <!-- CAJA REDES SOCIALES -->
     <!-- <div class="contenedor-socials">
@@ -327,23 +369,23 @@
         <a href="#" id="darkMode" style="background-color: rgb(33, 1, 106); color: rgb(255, 191, 0); padding: 10px 15px; border-radius: 5px; transition: 1s ease all;"><i class="fas fa-moon" style="font-size: 20px;"></i></a>
     </div> -->
     <!-- CAJA ETIQUETA -->
-    <div class="contenedor-bakanime2022" style="position: absolute; left: -3.5%; top: 19%; transform: rotate(90deg);">
+    <div class="contenedor-bakanime2022" style="position: absolute; left: -3.5%; top: 19%; transform: rotate(90deg); z-index: 702;">
         <a href="#"><h5 style="color: white; background-color: red; padding: 4px 6px;">BakAnime 2022</h5></a>
     </div>
     <!-- HEADER -->
     <header class="fixed-top">
-        <a href="#" id="btnMenuMobilE" style="margin-right: 2%; display: none;"><i class="fas fa-bars btnMobileMenu" style="color: white; display: none;"></i></a>
-        <a href="#" style="text-decoration: none; padding-top: 7px; margin-right: auto;"><h5 style="color: white;"><span style="color: white; font-size: 23px;"> B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
+        <a href="#" id="btnMenuMobilE" style="margin-right: 1%; display: none;"><i class="fas fa-bars btnMobileMenu" style="color: white; display: none;"></i></a>
+        <a href="#" style="text-decoration: none; padding-top: 7px; margin-right: auto;"><h5 class="icon" style="color: white;"><span style="color: white; font-size: 23px;"> B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
         <a href="#" id="btnSearchMobilE" style="margin-right: 0%; display: none;"><i class="fas fa-search btnMobileSearch" style="color: white; display: none;"></i></a>
         <nav>
             <ul>       
                 <li class="li-header"><a href="#" class="search" id="openSearchBox"><i class="fas fa-search"></i></a></li>
-                <li class="li-header"><a href="templates/catalogo.html" class="btnCatalogo">CATÁLOGO ANIMES / PELÍCULAS</a></li>
-                <li class="li-header"><a href="templates/catalogo-noticia.html" class="btnCatalogo">CATÁLOGO NOTICIAS</a></li>
+                <li class="li-header"><a href="templates/catalogo.html" class="btnCatalogo">ANIMES / PELÍCULAS</a></li>
+                <li class="li-header"><a href="templates/catalogo-noticia.html" class="btnCatalogo">NOTICIAS</a></li>
                 <li class="li-header"><a href="#" id="btnSolicitudBox" class="btnSolicitudBox">SOLICITAR ANIME</a></li>
             </ul>
         </nav>
-        <a href="#" class="btnSuscribe" id="btnSuscribeBox" style="color: white; background-color: rgb(222, 39, 11); padding: 7px; border: none; border-radius: 20px 0px 20px 0px; margin-left: 7px; font-size: 15px; transition: .2s ease all;">BAKANIME PLUS <i class="fas fa-plus"></i></a>
+        <a href="#" class="btnSuscribe" id="btnSuscribeBox" style="color: white; background-color: rgb(255, 34, 0); padding: 7px 10px; border: none; border-radius: 20px 0px 20px 0px; margin-left: 7px; font-size: 15px; transition: .2s ease all;">BAKANIME PLUS <i class="fas fa-plus"></i></a>
     </header>
     <section class="section-banner-index">
         <div class="banner" style="background: linear-gradient(rgba(0, 0, 0, 0.55) 100%, black 100%), url(https://i.pinimg.com/originals/5b/71/d4/5b71d4addabfa9ea9b82fbb66428df8b.jpg);">
@@ -362,7 +404,7 @@
     </section>
     <section class="section-index">
         <main>
-            <br><br>
+            <br>
             <div class="index-container">
                 <div class="">
                     <h3 class="title-index-animes-nuevos" style="color: white; font-family: 'Bebas Neue', cursive; font-weight: lighter;"><i class="fas fa-clock" style="color: rgb(255, 0, 0); margin-right: 5px;"></i> Agregados recientemente</h3>
@@ -477,7 +519,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -491,7 +533,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -505,7 +547,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -519,7 +561,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -533,7 +575,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -547,7 +589,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -561,7 +603,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -575,7 +617,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -589,7 +631,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -603,7 +645,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -617,7 +659,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -631,7 +673,7 @@
                                             <p class="p1">2021</p>
                                         </div>
                                         <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(74, 193, 0); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-play"></i> En Emisión</h6>
-                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 150px;">
+                                        <img src="https://firma.cl/skin/frontend/sm-siezz/default/sm/categories/images/nophoto.jpg" alt="" style="width: 100%; height: 170px;">
                                         <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kanojo mo Kanojo #7</p>
                                     </div>
                                 </div>
@@ -650,7 +692,7 @@
                             <div class="card card-pelicula-index d-flex flex-row" style="border: none; border-radius: 0px; margin-bottom: 30px; height: 280px;">
                                 <div class="card-image" style="width: 60%; background: url(https://4.bp.blogspot.com/-DYGJjX0c3gA/W8xhMeO80II/AAAAAAABCfg/JIn0V70slCEM4dApeTXxNm7Y1ks82V2PwCLcBGAs/s1600/tumblr_pf3k8cYZjr1rzp45wo1_1280-768x1085.jpg); background-position: center center; background-size: cover;"></div>
                                 <div class="card-content-pelicula" style="background-color: rgb(32, 32, 32); color: white; justify-content: start; width: 100%;">
-                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; font-size: 14px; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
+                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
                                     <div class="card-content" style="padding: 10px;">
                                         <h6 style="font-weight: normal; margin-top: 5px;">Seishun Buya Yarou wa Bunny Girl Senpai no Yume wo Minai</h6>
                                         <hr style="background-color: rgb(96, 96, 96);">
@@ -672,7 +714,7 @@
                             <div class="card card-pelicula-index d-flex flex-row" style="border: none; border-radius: 0px; margin-bottom: 30px; height: 280px;">
                                 <div class="card-image" style="width: 60%; background: url(https://images5.alphacoders.com/655/thumbbig-655087.webp); background-position: center center; background-size: cover;"></div>
                                 <div class="card-content-pelicula" style="background-color: rgb(32, 32, 32); color: white; justify-content: start; width: 100%;">
-                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; font-size: 14px; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
+                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
                                     <div class="card-content" style="padding: 10px;">
                                         <h6 style="font-weight: normal; margin-top: 5px;">Chūnibyō Demo Koi ga Shitai! Movie: Take On Me</h6>
                                         <hr style="background-color: rgb(96, 96, 96);">
@@ -692,7 +734,7 @@
                             <div class="card card-pelicula-index d-flex flex-row" style="border: none; border-radius: 0px; margin-bottom: 30px; height: 280px;">
                                 <div class="card-image" style="width: 60%; background: url(https://images8.alphacoders.com/838/thumb-1920-838299.png); background-position: center center; background-size: cover;"></div>
                                 <div class="card-content-pelicula" style="background-color: rgb(32, 32, 32); color: white; justify-content: start; width: 100%;">
-                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; font-size: 14px; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
+                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
                                     <div class="card-content" style="padding: 10px;">
                                         <h6 style="font-weight: normal; margin-top: 5px;">Koe no Katachi</h6>
                                         <hr style="background-color: rgb(96, 96, 96);">
@@ -713,7 +755,7 @@
                             <div class="card card-pelicula-index d-flex flex-row" style="border: none; border-radius: 0px; margin-bottom: 30px; height: 280px;">
                                 <div class="card-image" style="width: 60%; background: url(https://images6.alphacoders.com/725/thumb-1920-725814.png); background-position: center center; background-size: cover;"></div>
                                 <div class="card-content-pelicula" style="background-color: rgb(32, 32, 32); color: white; justify-content: start; width: 100%;">
-                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; font-size: 14px; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
+                                    <button class="btn btn-danger" style="border: none; border-radius: 0px; width: 100%; background-color: rgb(0, 255, 174); color: black;"><i class="fas fa-download"></i> DESCARGAR</button>
                                     <div class="card-content" style="padding: 10px;">
                                         <h6 style="font-weight: normal; margin-top: 5px;">Kimi no Na wa: Your Name</h6>
                                         <hr style="background-color: rgb(96, 96, 96);">
@@ -858,36 +900,85 @@
             const suscribeBox = document.getElementById("suscribeBox");
             const btnOpenSuscribeBox = document.getElementById("btnSuscribeBox");
             const closeSuscribeBox = document.getElementById("btnCloseSuscribeBox");
+            const body = document.getElementById("body");
+            const btnCancelSuscribeBox = document.getElementById("btnCancelSuscribeBox");
+            const btnSuscribeMobile = document.getElementById("btnSuscribeMobile");
 
             btnOpenSuscribeBox.addEventListener("click", function(event){
                 event.preventDefault();
                 suscribeBox.style.right = "0%";
                 suscribeBox.style.transition = ".5s ease all";
+                body.style.overflow = "hidden";
+            });
+            
+
+            btnCancelSuscribeBox.addEventListener("click", function(event){
+                event.preventDefault();
+                suscribeBox.style.right = "-200%";
+                suscribeBox.style.transition = ".8s ease all";
+                body.style.overflow = "visible";
             });
 
             closeSuscribeBox.addEventListener("click", function(event){
                 event.preventDefault();
                 suscribeBox.style.right = "-200%";
                 suscribeBox.style.transition = ".8s ease all";
+                body.style.overflow = "visible";
             });
         }
         openSuscribeBox();
+
+
+        function openSuscribeBoxMobile(){
+            const suscribeBox = document.getElementById("suscribeBox");
+            const closeSuscribeBox = document.getElementById("btnCloseSuscribeBox");
+            const body = document.getElementById("body");
+            const btnCancelSuscribeBox = document.getElementById("btnCancelSuscribeBox");
+            const btnSuscribeMobile = document.getElementById("btnSuscribeMobile");
+            const contenedorGeneralMenuMobilE = document.getElementById("contenedorGeneralMenuMobilE");
+
+            btnSuscribeMobile.addEventListener("click", function(event){
+                event.preventDefault();
+                contenedorGeneralMenuMobilE.style.left = "-200%";
+                suscribeBox.style.right = "0%";
+                suscribeBox.style.transition = ".5s ease all";
+                body.style.overflow = "hidden";
+            });
+
+            btnCancelSuscribeBox.addEventListener("click", function(event){
+                event.preventDefault();
+                suscribeBox.style.right = "-200%";
+                suscribeBox.style.transition = ".8s ease all";
+                body.style.overflow = "visible";
+            });
+
+            closeSuscribeBox.addEventListener("click", function(event){
+                event.preventDefault();
+                suscribeBox.style.right = "-200%";
+                suscribeBox.style.transition = ".8s ease all";
+                body.style.overflow = "visible";
+            });
+        }
+        openSuscribeBoxMobile();
 
         function openMenuMobile(){
             const btnMenuMobilE = document.getElementById("btnMenuMobilE");
             const contenedorGeneralMenuMobilE = document.getElementById("contenedorGeneralMenuMobilE");
             const closeMobileMenu = document.getElementById("closeMobileMenu");
+            const body = document.getElementById("body");
 
             btnMenuMobilE.addEventListener("click", function(event){
                 event.preventDefault();
                 contenedorGeneralMenuMobilE.style.left = "0%";
                 contenedorGeneralMenuMobilE.style.transition = ".4s ease all";
+                body.style.overflow = "hidden";
             });
 
             closeMobileMenu.addEventListener("click", function(event){
                 event.preventDefault();
                 contenedorGeneralMenuMobilE.style.left = "-100%";
                 contenedorGeneralMenuMobilE.style.transition = ".4s ease all";
+                body.style.overflow = "visible";
             });
         }
         openMenuMobile();
