@@ -15,29 +15,30 @@
 </head>
 <body>
     <!-- MENÙ MOBILE -->
-    <div class="contenedorGeneralMenuMobile" id="contenedorGeneralMenuMobilE" style="position: fixed; top: 9%; left: -100%; height: 100vh; width: 100%; z-index: 700; transition: .4s ease all;">
-        <div class="menu-mobile-box" style="background-color: rgb(33, 33, 33); padding: 25px 15px 15px 15px; width: 60%;">
+    <div class="contenedorGeneralMenuMobile" id="contenedorGeneralMenuMobilE" style="position: fixed; top: 0%; left: -100%; height: 100vh; width: 100%; z-index: 5000; transition: .4s ease all;">
+        <div class="menu-mobile-box" style="background-color: rgb(33, 33, 33); padding: 10px 15px 15px 15px; width: 100%;">
             <div class="row">
-                <div class="col-12">
+                <div class="col-10">
+                    <h1 style="color: white; font-family: 'Bebas Neue', cursive; letter-spacing: 2px;">Menú</h1>
+                </div>
+                <div class="col-2">
                     <a href="#" id="closeMobileMenu"><i class="fas fa-times" style="color: white; float: right; font-size: 20px;"></i></a>
                 </div>
             </div>
         </div>
         <!-- CONTENIDO MOBILE MENU -->
-        <div class="contentMobileMenuBox" id="menuMobileBox" style="background-color: rgb(33, 33, 33); color: rgb(255, 255, 255); padding: 10px 15px 25px 15px; width: 60%; height: 100vh;">
-            <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 1px;"><i class="fas fa-home"></i> Inicio</h5></a>
+        <div class="contentMobileMenuBox" id="menuMobileBox" style="background-color: rgb(33, 33, 33); color: rgb(255, 255, 255); padding: 10px 15px 25px 15px; width: 100%; height: 100vh;">
+            <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 2px;"><i class="fas fa-home"></i> Inicio</h5></a>
             <hr>
-            <a href="templates/catalogo.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 1px;"><i class="fas fa-book-open"></i> Animes / Películas</h5></a>
+            <a href="templates/catalogo.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 2px;"><i class="fas fa-book-open"></i> Animes / Películas</h5></a>
             <hr>
-            <a href="templates/catalogo-noticia.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 1px;"><i class="fas fa-newspaper"></i> Noticias</h5></a>
+            <a href="templates/catalogo-noticia.html"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 2px;"><i class="fas fa-newspaper"></i> Noticias</h5></a>
             <hr>
-            <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 1px;"><i class="fas fa-paper-plane"></i> Solicitar Anime</h5></a>
+            <a href="#"><h5 style="font-family: 'Bebas Neue', cursive; color: rgb(255, 255, 255); letter-spacing: 2px;"><i class="fas fa-paper-plane"></i> Solicitar Anime</h5></a>
             <hr>
-            <a href="#" class="btn btn-danger" style="border: none; border-radius: 20px 0px 20px; padding: 10px 10px 4px 10px; background-color: red; letter-spacing: 1px;"><h3 style="font-family: 'Bebas Neue', cursive; color: white; font-size: 20px;">
+            <a href="#" class="btn btn-danger" style="border: none; border-radius: 20px 0px 20px; padding: 10px 10px 4px 10px; background-color: red; letter-spacing: 2px;"><h3 style="font-family: 'Bebas Neue', cursive; color: white; font-size: 20px;">
                 BAKANIME PLUS
                 <i class="fas fa-plus"></i></h3></a>
-            <br><br>
-            <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; height: 40px; font-family: 'Bebas Neue', cursive;">
         </div>
     </div>
     
@@ -57,11 +58,194 @@
         <div class="form-group container">
             <div class="row">
                 <div class="col-12">
-                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important;">
+                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" 
+                    style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; border-top: none !important; border-left: none !important; border-right: none !important; border-bottom: 1px solid white !important;">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="mas-buscados">
+            <div class="container">
+                <h4 style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Animes más buscados</h4>
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 80px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- CAJA DE BÚSQUEDA MOBILE -->
+    <div class="search-box" id="searchBoxMobile" style="overflow: auto !important; height: 100%;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-10">
+                    <h4 style="color: rgb(255, 255, 255); font-family: 'Open Sans Condensed', sans-serif; margin-bottom: 15px;"><i class="fas fa-search" style="color: white; font-size: 20px;"></i> BUSCADOR</h4>
+                </div>
+                <div class="col-2">
+                    <a href="#" id="closeSearchBoxMobile"><i class="fas fa-angle-up" style="color: rgb(255, 255, 255); float: right;"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group container">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" placeholder="¿Qué veremos hoy?..." name="" id="search" class="form-control" 
+                    style="padding: 6px 10px; color: rgb(0, 0, 0); width: 100% !important; border-top: none !important; border-left: none !important; border-right: none !important; border-bottom: 1px solid white !important;">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="mas-buscados">
+            <div class="container">
+                <h4 style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Animes más buscados</h4>
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#">
+                            <div class="card card-anime-catalogo" style="border: none; border-radius: 0px; margin-bottom: 40px;">
+                                <div class="card-image">
+                                    <div class="content-hover d-flex flex-row" style="width: 0%; height: 4vh; background-color: rgba(255, 0, 0, 0.700); position: absolute; bottom: 0; left: 0; padding: 5px 10px; opacity: 0; text-decoration: none;">
+                                        <p class="p1">Octubre 2022</p>
+                                    </div>
+                                    <h6 style="position: absolute; top: 0; right: 0; padding: 6px; background-color: rgb(232, 167, 1); color: white; font-size: 10px; font-weight: lighter;"><i class="fas fa-clock"></i> Próximamente</h6>
+                                    <img src="http://www.penumbria.mx/wp-content/uploads/2017/06/tomie.jpg" alt="" style="width: 100%; height: 270px;">
+                                    <p style="color: white; position: absolute; margin-top: 10px; pointer-events: none; cursor: default; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Uzumaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- CAJA DE SOLICITUD ANIME -->
     <div class="solicitud-box" id="solicitudBox" style="background-color: rgba(0, 0, 0, 0.900); box-shadow: 2px 3px 40px rgb(16, 16, 16); padding: 25px 10px 30px 10px; border-radius: 3px; position: fixed; z-index: 701; top: 7.8%; right: -200%; width: 500px; height: 100vh;">
         <div class="row" style="padding: 10px;">
@@ -148,10 +332,11 @@
     </div>
     <!-- HEADER -->
     <header class="fixed-top">
-        <a href="#" style="text-decoration: none; padding-top: 10px; margin-right: auto;"><h5 style="color: white;"><span style="color: white; font-size: 23px;"> B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
+        <a href="#" id="btnMenuMobilE" style="margin-right: 2%; display: none;"><i class="fas fa-bars btnMobileMenu" style="color: white; display: none;"></i></a>
+        <a href="#" style="text-decoration: none; padding-top: 7px; margin-right: auto;"><h5 style="color: white;"><span style="color: white; font-size: 23px;"> B</span>AK<span style="color: red;"><span style="color: red; font-size: 23px;">A</span>NIME</span></h5></a>
+        <a href="#" id="btnSearchMobilE" style="margin-right: 0%; display: none;"><i class="fas fa-search btnMobileSearch" style="color: white; display: none;"></i></a>
         <nav>
-            <ul>
-                <li class="li-header"><a href="#" id="btnMenuMobilE" style="float: right !important; margin-right: 0%; display: none;"><i class="fas fa-bars btnMobileMenu" style="color: white; display: none;"></i></a></li>
+            <ul>       
                 <li class="li-header"><a href="#" class="search" id="openSearchBox"><i class="fas fa-search"></i></a></li>
                 <li class="li-header"><a href="templates/catalogo.html" class="btnCatalogo">CATÁLOGO ANIMES / PELÍCULAS</a></li>
                 <li class="li-header"><a href="templates/catalogo-noticia.html" class="btnCatalogo">CATÁLOGO NOTICIAS</a></li>
@@ -619,7 +804,7 @@
 
             btnOpenSearchBox.addEventListener("click", function(event){
                 event.preventDefault();
-                searchBox.style.top = "7.5%";
+                searchBox.style.top = "6%";
                 searchBox.style.transition = ".5s ease all";
             });
 
@@ -630,6 +815,25 @@
             });
         }
         openSearchBox();
+
+        function openSearchBoxMobile(){
+            const searchBoxMobile = document.getElementById("searchBoxMobile");
+            const btnSearchMobilE = document.getElementById("btnSearchMobilE");
+            const closeSearchBoxMobile = document.getElementById("closeSearchBoxMobile");
+
+            btnSearchMobilE.addEventListener("click", function(event){
+                event.preventDefault();
+                searchBoxMobile.style.top = "4%";
+                searchBoxMobile.style.transition = ".5s ease all";
+            });
+
+            closeSearchBoxMobile.addEventListener("click", function(event){
+                event.preventDefault();
+                searchBoxMobile.style.top = "-200%";
+                searchBoxMobile.style.transition = ".8s ease all";
+            });
+        }
+        openSearchBoxMobile();
 
         function openSolicitudBox(){
             const solicitudBox = document.getElementById("solicitudBox");
