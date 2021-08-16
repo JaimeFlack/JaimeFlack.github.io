@@ -660,6 +660,9 @@ header nav ul li a:hover{
     #btnCloseSuscribeBox{
         margin-top: 10px;
     }
+    ::-webkit-scrollbar{
+        width: 2px !important;
+    }
 }
 @media (max-width: 450px){
     .card-anime-index .card-image img{
