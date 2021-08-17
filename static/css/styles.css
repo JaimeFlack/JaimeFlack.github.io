@@ -87,7 +87,7 @@ header nav ul li a:hover{
     background-color: rgb(33, 33, 33);
     padding: 30px 20px;
     border-radius: 3px;
-    z-index: 702;
+    z-index: 700;
 }
 .container-box{
     display: flex;
@@ -277,6 +277,10 @@ header nav ul li a:hover{
 .contenedor-form-solicitud input:focus{
     border: none !important;
     border-bottom: 1px solid rgb(154, 154, 154) !important;
+}
+.season:hover,
+.year:hover{
+    cursor: default !important;
 }
 /* ŒMEDIAS */
 @media (max-width: 570px){
@@ -650,6 +654,7 @@ header nav ul li a:hover{
     .season, 
     .year{
         font-size: 12px !important;
+        font-weight: normal !important;
     }
     .subtitle-banner .btnDescargarBanner{
         display: none !important;
