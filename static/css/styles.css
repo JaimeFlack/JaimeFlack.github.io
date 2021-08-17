@@ -424,13 +424,16 @@ header nav ul li a:hover{
         font-size: 9px !important;
     }
     .card-anime-catalogo .card-image img{
-        height: 260px !important;
+        height: 280px !important;
+    }
+    .card-anime-catalogo{
+        height: 280px !important;
     }
     .card-anime-catalogo .card-image p{
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
     .card-anime-catalogo .card-image h6{
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
     .container-capitulos-nuevos .card-anime-catalogo{
         margin-bottom: 60px !important;
@@ -490,7 +493,10 @@ header nav ul li a:hover{
     .section-x-anime,
     .section-catalogo-noticias,
     .section-catalogo-anime{
-        padding: 40px 15px;
+        padding: 40px 10px;
+    }
+    .section-catalogo-anime{
+        margin-top: -40px !important;
     }
     .section-x-noticia{
         padding: 40px 15px !important;
@@ -524,6 +530,9 @@ header nav ul li a:hover{
     .noticias-x-anime{
         font-size: 22px !important;
         letter-spacing: 1px;
+    }
+    .title-catalogo-animes{
+        padding: 10px 10px 0px 10px !important;
     }
     .contenido-catalogo-noticias .card-anime-catalogo{
         margin-bottom: 50px !important;
