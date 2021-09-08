@@ -1,0 +1,370 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+/* configuracion general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos */
+.section-novedades-index .banner-index .banner{
+    width: 100%;
+    height: 800px;
+    background-size: cover !important;
+    background-position: center top !important;
+    margin: auto;
+}
+.contenido-carrusel .banner{
+    width: 700px;
+    height: 400px;
+    background-size: cover !important;
+    background-position: center top !important;
+    margin: auto;
+    border: 2px solid black;
+    padding: 15px 30px;
+}
+.banner .title-banner{
+    padding-top: 10%;
+    text-align: center;
+}
+.contenido-carrusel .banner .title-banner{
+    padding-top: 20%;
+    text-align: left;
+}
+.banner .title-banner .pIndexSinopsis{
+    text-align: center;
+}
+.banner .btnDescargarBanner{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.679);
+    border-radius: 0px;
+    padding: 10px 60px;
+    width: auto;
+    height: auto;
+    transition: .2s ease-in-out;
+}
+.banner .btnDescargarBanner:hover{
+    background-color: white;
+}
+.menu-opciones a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.section-opciones-index-mobile-mode{
+    display: none;
+}
+.menu-opciones #closeBuscar{
+    display: none;
+}
+.section-ultimas-noticias-index{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.filaInfo p{
+    font-style: italic;
+}
+.btnPreview{
+    border-radius: 0px;
+    background-color: black; 
+    color: white; 
+    border: none;
+    text-decoration: none; 
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+.btnPreview:hover{
+    background-color: rgb(244, 244, 244) !important;
+}
+.btnLeerMangaIndex{
+    border-radius: 0px;
+    background-color: black; 
+    color: white !important; 
+    border: none;
+    text-decoration: none; 
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+.x-noticia-index{
+    margin-bottom: 25px;
+}
+.section-volumenes-index{
+    margin-top: 30px;
+}
+.card-volumen-manga-index{
+    transition: .2s ease-out !important;
+}
+.card-volumen-manga-index:hover{
+    transform: rotate(-2deg);
+    transition: .2s ease-out;
+}
+.section-episodios-anime{
+    margin-top: 70px;
+}
+.caja-episodio-index{
+    transition: .4s ease-out;
+}
+.caja-episodio-index:hover{
+    transform: rotate(-0.7deg);
+    transition: .2s ease-out;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+    box-shadow: 3px 3px 30px rgb(155, 155, 155);
+}
+.contenido-formulario h5{
+    margin-top: 20px;
+}
+.btnLogin:hover{
+    background-color: rgb(244, 244, 244) !important;
+}
+.btnRegister:hover{
+    background-color: rgb(244, 244, 244) !important;
+}
+.contenido-formulario-botones button{
+    margin-bottom: 10px;
+}
+.section-footer{
+    margin-top: 100px;
+}
+.section-redes-fixed a{
+    transition: .2s ease-in-out;
+}
+.section-redes-fixed a:hover{
+    background-color: rgb(240, 240, 240) !important;
+    transform: rotate(-3deg) !important;
+    transition: .2s ease-out;
+}
+.section-redes-fixed .a1:hover{
+    background-color: black !important;
+    color: white;
+}
+.contenido-btn-open-menu-pc a:hover{
+    background-color: rgb(244, 244, 244) !important;
+    transition: .2s ease-out;
+}
+.btnDescubrirNoticiasHeader{
+    transition: .2s ease-in-out;
+}
+.btnDescubrirNoticiasHeader:hover{
+    background-color: rgb(228, 228, 228) !important;
+    transform: rotate(-1.5deg);
+    transition: .2s ease-out;
+}
+.contenido-generos-manga a:hover{
+    color: black !important;
+    transition: .4s ease-out;
+    font-weight: 500;
+}
+.contenedor-episodios a{
+    transition: .3s ease-in-out;
+}
+.contenedor-episodios a:hover{
+    transform: rotate(-2deg);
+    transition: .3s ease-out;
+    background-color: rgb(228, 228, 228) !important;
+}
+.imagen-noticia a{
+    transition: .2s ease-in-out !important;
+}
+.imagen-noticia a:hover{
+    background-color: white !important;
+    transition: .2s ease-out !important;
+}
+.section-catalogo-aninmes-y-peliculas .contenido .contenido-catalogo a{
+    width: auto; 
+    height: auto; 
+    text-decoration: none; 
+    color: black;
+}
+.section-catalogo-aninmes-y-peliculas .contenido .contenido-catalogo a img{
+    transition: .3s ease-in-out !important;
+}
+.section-catalogo-aninmes-y-peliculas .contenido .contenido-catalogo a:hover img{
+    transform: rotate(-2deg) !important;
+    transition: .3s ease-out !important;
+}
+.section-contenido-catalogo-noticias .contenido .contenido-catalogo a{
+    color: black !important;
+}
+.section-contenido-catalogo-noticias .contenido .contenido-catalogo a img{
+    transition: .3s ease-in-out !important;
+}
+.section-contenido-catalogo-noticias .contenido .contenido-catalogo a:hover img{
+    transform: rotate(-2deg) !important;
+    transition: .3s ease-out !important;
+}
+.contenido-paginacion-catalogo a{
+    margin-left: 3px !important;
+    transition: .3s ease-in-out;
+    text-decoration: underline;
+    color: black;
+}
+.contenido-paginacion-catalogo a:hover{
+    transition: .3s ease-out;
+    background-color: rgb(228, 228, 228);
+}
+.menuMobile a{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* modo mobile */
+@media (max-width: 570px){
+    .section-novedades-index .banner-index .banner{
+        width: 100%;
+        height: 370px;
+        padding-bottom: 60px;
+    }
+    .banner .title-banner{
+        padding: 15% 30px 0px 30px;
+    }
+    .section-opciones-index-pc-mode{
+        display: none;
+    }
+    .section-opciones-index-mobile-mode{
+        display: unset;
+    }
+    .menuMobile{
+        display: none;
+        width: 100%;
+    }
+    #closeMenuMobile{
+        display: none;
+    }
+    .title-banner h1{
+        font-size: 30px !important;
+    }
+    .banner .anime,
+    .banner .year{
+        font-size: 13px !important;
+    }
+    .section-ultimas-noticias-index{
+        padding-top: 3px;
+    }
+    .contenido{
+        padding-top: 20px 0px !important;
+    }
+    .contenido h1{
+        font-size: 45px;
+    }
+    .filaInfo p{
+        font-size: 13px;
+        font-style: italic;
+    }
+    .btnLeerMangaIndex{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    .btnLeerMangaIndex:hover{
+        text-decoration: none;
+    }
+    .caja-episodio-index:hover{
+        transform: rotate(0deg);
+        margin-bottom: 30px !important;
+    }
+    .contenido-formulario-botones{
+        margin-top: 30px;
+        height: auto;
+    }
+    .contenido-formulario-botones button{
+        margin-bottom: 10px;
+    }
+    .cajaHoverFooter{
+        width: 90% !important;
+        top: -15% !important;
+        position: relative;
+    }
+    .section-footer{
+        margin-top: 200px;
+    }
+    .section-footer .contenido{
+        height: auto !important;
+        padding: 10px 30px !important;
+    }
+    .section-footer .contenido h5{
+        width: 100% !important;
+    }
+    .section-footer .contenido h1{
+        padding-top: 30px;
+        font-size: 40px !important;
+    }
+    .section-footer .contenido p{
+        text-align: center !important;
+    }
+    .caja-redes{
+        text-align: center;
+    }
+    .section-redes-fixed{
+        display: none;
+    }
+    #openMenuPc{
+        display: none;
+    }
+    .btnPreview{
+        width: 100%;
+    }
+    .section-banner-catalogo-noticias .banner-catalogo-noticia{
+        height: 200px !important;
+    }
+    .section-banner-x-noticia .banner-x-noticia{
+        height: 200px !important;
+    }
+    .section-banner-x-noticia .contenido-noticia{
+        border: none !important;
+        background-color: white !important;
+        padding: 0px !important;
+    }
+    .imagen-noticia{
+        height: 230px !important;
+        width: 100%;
+        border: 2px solid black !important;
+    }
+    .contenedor-carrusel-x-noticia{
+        padding: 0px !important;
+    }
+    .contenedor-carrusel-x-noticia .title-banner .btnDescargarBanner{
+        padding: 10px 30px !important;
+    }
+    .ul-slider{
+        height: 260px !important;
+    }
+    .ul-slider .banner .title-banner h1{
+        font-size: 25px !important;
+    }
+    .ul-slider .banner .title-banner{
+        padding: 10% 15px 0px 15px !important;
+    }
+    .carrusel-banner-index .ul-slider{
+        height: 300px !important;
+    }
+    .contenido-noticia{
+        padding: 0px !important;
+    }
+    .contenedor-informacion-noticia{
+        padding: 0px !important;
+    }
+    .section-contenido-catalogo-noticias .sidebar{
+        padding: 0px !important;
+        margin: 0 !important;
+    }
+    .contenido-catalogo h1{
+        font-size: 60px !important;
+        padding: 0 !important;
+        margin-top: 15px;
+    }
+    .sidebar h3{
+        margin-top: 20px;
+    }
+    .section-volumenes-index{
+        margin-top: 0px;
+    }
+    .x-noticia-index .contenido h1{
+        font-size: 50px;
+    }
+}

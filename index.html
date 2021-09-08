@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="static/css/lightslider.css">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <title>Fire Force</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="header" style="background-color: rgb(0, 0, 0); padding: 10px 0px; width: 100%; align-items: center;">
+                <div class="container text-center">
+                    <a href="#" style="font-size: 27px; text-decoration: none; font-family: 'Anton', sans-serif; color: rgb(255, 166, 1); letter-spacing: 1px;">
+                        <img src="https://www.charactersize.com/wp-content/uploads/Logo-12.png" style="width: 30%;" alt="fire force"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- cuerpo -->
+    <section class="section-opciones-index-mobile-mode">
+        <div class="menu-opciones" style="background-color: white; color: black; padding: 10px 20px;">
+            <div class="container text-center">
+                <a href="#" id="openMenuMobile"><i class="fas fa-bars"></i> Menú</a>
+                <a href="#" id="closeMenuMobile"><i class="fas fa-times"></i> Cerrar</a>
+            </div>
+            <div class="menuMobile" id="menuMobile" style="transition: .3s ease all !important;">
+                <br><br>
+                <a href="#">Inicio</a>
+                <hr>
+                <a href="#">Noticias</a>
+                <hr>
+                <a href="#">Anime</a>
+                <hr>
+                <a href="#">Personajes</a>
+                <hr>
+                <a href="#">Manga</a>
+                <hr>
+                <h5 style="font-family: 'Bebas Neue', cursive;">BUSCA POR TÍTULO, CAPÍTULO, NOTICIA, ETC</h5>
+                <input type="text" style="border: 1px solid black; background-color: white; color: black; border-radius: 0px; padding: 7px 10px; width: 100%;">
+                <br><br>
+            </div>
+        </div>
+    </section>
+    <section class="section-buscador-pc">
+        <div class="caja-buscador text-center" id="cajaBuscador" style="padding: 30px 10px; position: fixed; z-index: 1000; bottom: -100%; margin: auto; background-color: rgb(247, 247, 247); width: 100%; 
+        box-shadow: 20px 20px 50px rgb(126, 126, 126);">
+            <a href="#" id="closeBuscar" style="padding: 15px 18px 13px 18px; border-radius: 0px; border: 2px solid black; background-color: black; float: right; margin-right: 2%;">
+                <i class="fas fa-times" style="color: white; font-size: 25px;"></i></a>
+            <div class="container text-center">
+                <h4 style="text-align: center; font-family: 'Bebas Neue', cursive;">BUSCA POR TÍTULO, CAPÍTULO, NOTICIA, ETC</h4>
+                <input id="inputPcMode" type="text" style="border: 1px solid black; border-radius: 0px; width: 50%; padding: 10px;">
+                <a href="#" style="margin-left: 0px; border: 1px solid black; background-color: white; padding: 11px;"><i class="fas fa-search" style="color: black; font-size: 20px;"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="section-noticias-header">
+        <div class="caja-noticias-header" id="cajaNoticiasHeader" style="position: fixed; top: 0; left: 200%; width: 100%; height: auto; background-color: rgb(247, 247, 247); 
+        margin: 10px 20px; border: 3px solid black; z-index: 701; box-shadow: 3px 3px 50px rgb(126, 126, 126);">
+            <div class="contenido">
+                <div class="row">
+                    <div class="d-flex flex-row">
+                        <div class="col-3">
+                            <img src="https://i.pinimg.com/originals/2d/97/22/2d9722b0118e46e467ae618b368a88d4.png" alt="" width="100%" height="100%" style="border: 3px solid black;">
+                        </div>
+                        <div class="col-3">
+                            <div class="contenido-1">
+                                <a href="templates/catalogo-noticias.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">todas las noticias
+                                </a>
+                                <a href="templates/catalogo-noticias.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">noticias novelas ligeras
+                                </a>
+                                <div class="d-flex flex-row">
+                                    <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 50%; height: 100px;
+                                    font-family: 'Bebas Neue', cursive; font-size: 20px;">noticias manga
+                                    </a>
+                                    <a href="templates/catalogo-noticias.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 50%; height: 100px;
+                                    font-family: 'Bebas Neue', cursive; font-size: 20px;">noticias anime
+                                    </a>
+                                </div>
+                                <a href="templates/catalogo-noticias.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">noticias de los seiyus
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contenido-generos-manga" style="border: 2px solid black; width: 100%; height: 75%; padding: 25px;">
+                                <div class="row">
+                                    <div class="col-11">
+                                        <h1 style="font-family: 'Bebas Neue', cursive; text-decoration: overline; font-size: 40px;">MENÚ DE NOTICIAS</h1>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" id="closeHeaderNoticias" style="padding: 15px 18px 13px 18px; border-radius: 0px; border: 2px solid black; background-color: black; margin-right: 3%;">
+                                            <i class="fas fa-times" style="color: white; font-size: 20px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">MERCANCÍA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">JAPÓN</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ESTRENOS</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">MANGA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ANIME</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">SEIYUS</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">COMEDIA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ROMANCE</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ISEKAI</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">DRAMA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">SOBRENATURAL</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">Fire Force: Enn Enn no Shouboutai</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sin-contenido" style="border: 2px solid black; width: 100%; height: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-noticias-header">
+        <div class="caja-noticias-header" id="cajaAnimeHeader" style="position: fixed; top: 0; left: 200%; width: 100%; height: auto; background-color: rgb(247, 247, 247); 
+        margin: 10px 20px; border: 3px solid black; z-index: 701; box-shadow: 3px 3px 50px rgb(126, 126, 126);">
+            <div class="contenido">
+                <div class="row">
+                    <div class="d-flex flex-row">
+                        <div class="col-3">
+                            <img src="https://www.tonica.la/__export/1599670633346/sites/debate/img/2020/09/09/fire-force-estrena-nuevo-poster.jpg_1902800913.jpg" alt="" width="100%" height="100%" style="border: 3px solid black;">
+                        </div>
+                        <div class="col-2">
+                            <div class="contenido-1">
+                                <a href="templates/catalogo.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">todos los animes
+                                </a>
+                                <a href="templates/catalogo.html" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">todas las películas
+                                </a>
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">en emisión
+                                </a>
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">finalizados
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="contenido-generos-manga" style="border: 2px solid black; width: 100%; height: 100%; padding: 25px;">
+                                <div class="row">
+                                    <div class="col-11">
+                                        <h1 style="font-family: 'Bebas Neue', cursive; text-decoration: overline; font-size: 40px;">ANIMES MÁS DESCARGADOS</h1>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" id="closeHeaderAnime" style="padding: 15px 18px 13px 18px; border-radius: 0px; border: 2px solid black; background-color: black; margin-right: 3%;">
+                                            <i class="fas fa-times" style="color: white; font-size: 20px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="contenedor-episodios" style="max-width: 900px;">
+                                            <a href="#" class="btn" style="font-family: 'Bebas Neue', cursive; color: black; font-size: 17px; margin-top: 20px; padding: 0;
+                                            border-radius: 0px; border: 2px solid black; text-align: center;">
+                                                <img src="https://static.wikia.nocookie.net/doblaje/images/3/3b/Fire_Force_Poster.jpg/revision/latest?cb=20210705012740&path-prefix=es" alt="" width="170px" height="250px">
+                                            </a>
+                                            <a href="#" class="btn" style="font-family: 'Bebas Neue', cursive; color: black; font-size: 17px; margin-top: 20px; padding: 0;
+                                            border-radius: 0px; border: 2px solid black; text-align: center;">
+                                                <img src="https://es.web.img3.acsta.net/pictures/20/03/04/17/23/4420222.jpg" alt="" width="170px" height="250px">
+                                            </a>
+                                            <a href="#" class="btn" style="font-family: 'Bebas Neue', cursive; color: black; font-size: 17px; margin-top: 20px; padding: 0;
+                                            border-radius: 0px; border: 2px solid black; text-align: center;">
+                                                <img src="https://media.redadn.es/series/p/wotakoi-el-amor-es-dificil-para-otaku_3370.jpg" alt="" width="170px" height="250px">
+                                            </a>
+                                            <a href="#" class="btn" style="font-family: 'Bebas Neue', cursive; color: black; font-size: 17px; margin-top: 20px; padding: 0;
+                                            border-radius: 0px; border: 2px solid black; text-align: center;">
+                                                <img src="https://static.wikia.nocookie.net/doblaje/images/9/9e/Horimiya_-_Poster.jpg/revision/latest?cb=20210810165454&path-prefix=es" alt="" width="170px" height="250px">
+                                            </a>
+                                            <a href="#" class="btn" style="font-family: 'Bebas Neue', cursive; color: black; font-size: 17px; margin-top: 20px; padding: 0;
+                                            border-radius: 0px; border: 2px solid black; text-align: center;">
+                                                <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/e/5/d/e/e5de06a146a2a83218bcc91426fa3605.jpg" alt="" width="170px" height="250px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-manga-header">
+        <div class="caja-manga-header" id="cajaMangaHeader" style="position: fixed; top: 0; left: 200%; width: 100%; height: auto; background-color: rgb(247, 247, 247); 
+        margin: 10px 20px; border: 3px solid black; z-index: 701; box-shadow: 3px 3px 50px rgb(126, 126, 126);">
+            <div class="contenido">
+                <div class="row">
+                    <div class="d-flex flex-row">
+                        <div class="col-3">
+                            <img src="https://kodansha.us/wp-content/uploads/2020/12/FireForce_Series_IMG_1200x960-1024x819.jpg" alt="" width="100%" height="100%" style="border: 3px solid black;">
+                        </div>
+                        <div class="col-3">
+                            <div class="contenido-1">
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">todo sobre el manga
+                                </a>
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">novedades del manga
+                                </a>
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">reseñas del manga
+                                </a>
+                                <a href="#" class="btn btnDescubrirNoticiasHeader" style="border: 2px solid black; border-radius: 0px; padding: 33px; text-align: center; width: 100%; height: 100px;
+                                font-family: 'Bebas Neue', cursive; font-size: 20px;">noticias de los seiyus
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contenido-generos-manga" style="border: 2px solid black; width: 100%; height: 75%; padding: 25px;">
+                                <div class="row">
+                                    <div class="col-11">
+                                        <h1 style="font-family: 'Bebas Neue', cursive; text-decoration: overline; font-size: 40px;">MENÚ DE MANGAS</h1>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" id="closeHeaderManga" style="padding: 15px 18px 13px 18px; border-radius: 0px; border: 2px solid black; background-color: black; margin-right: 3%;">
+                                            <i class="fas fa-times" style="color: white; font-size: 20px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">MERCANCÍA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">JAPÓN</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ESTRENOS</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">MANGA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ANIME</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">SEIYUS</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">COMEDIA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ROMANCE</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">ISEKAI</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">DRAMA</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">SOBRENATURAL</a>
+                                        <br>
+                                        <a href="#" style="font-family: 'Bebas Neue', cursive; color: rgb(106, 106, 106); text-decoration: overline; font-size: 17px; letter-spacing: 1px; margin-top: 20px;">Fire Force: Enn Enn no Shouboutai</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sin-contenido" style="border: 2px solid black; width: 100%; height: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-novedades-index">
+        <div class="banner-index">
+            <div class="carrusel-banner-index">
+                <ul class="ul-slider" id="autoWidth" style="list-style: none; margin: 0; padding: 0;">
+                    <li class="item-a" style="width: 100vw;">
+                        <div class="banner" style="background: linear-gradient(rgba(0, 0, 0, 0.30) 100%, black 100%), url(https://images6.alphacoders.com/105/1058005.jpg);">
+                            <div class="title-banner">
+                                <h1 style="color: white; font-family: 'Bebas Neue', cursive; font-size: 50px;">Hermoso fondo de pantalla de Tamaki</h1>
+                                <br>
+                                <a href="#" class="btn btn-danger anime" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">Fire Force</a>
+                                <a href="#" class="btn btn-danger year" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">2021</a>
+                                <br><br>
+                                <p class="pIndexSinopsis" style="color: rgba(255, 255, 255, 0.857); font-size: 15px; margin-bottom: 40px;">
+                                    La hermosa personaje de Fire Force, Tamaki, protagoniza un hermoso fondo de pantalla.
+                                </p>
+                                <a class="btnDescargarBanner" href="templates/x-noticia.html" style="font-family: 'Courier New', Courier, monospace;">Leer Ahora</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a" style="width: 100vw;">
+                        <div class="banner" style="background: linear-gradient(rgba(0, 0, 0, 0.50) 100%, black 100%), url(https://otakukart.com/wp-content/uploads/2021/03/maxresdefault-11-1.jpg);">
+                            <div class="title-banner">
+                                <h1 style="color: white; font-family: 'Bebas Neue', cursive; font-size: 50px;">La 3era temporada está cerca</h1>
+                                <br>
+                                <a href="#" class="btn btn-danger anime" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">Fire Force</a>
+                                <a href="#" class="btn btn-danger year" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">2021</a>
+                                <br><br>
+                                <p class="pIndexSinopsis" style="color: rgba(255, 255, 255, 0.857); font-size: 15px; margin-bottom: 40px;">
+                                    La tercera entrega del anime podría estar cerca según esta información.
+                                </p>
+                                <a class="btnDescargarBanner" href="#" style="font-family: 'Courier New', Courier, monospace;">Leer Ahora</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a" style="width: 100vw;">
+                        <div class="banner" style="background: linear-gradient(rgba(0, 0, 0, 0.50) 100%, black 100%), url(https://www.nawpic.com/media/2020/shinra-nawpic-e1622059353612.png);">
+                            <div class="title-banner">
+                                <h1 style="color: white; font-family: 'Bebas Neue', cursive; font-size: 50px;">¡Shinra está listo!</h1>
+                                <br>
+                                <a href="#" class="btn btn-danger anime" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">Fire Force</a>
+                                <a href="#" class="btn btn-danger year" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">2021</a>
+                                <br><br>
+                                <p class="pIndexSinopsis" style="color: rgba(255, 255, 255, 0.857); font-size: 15px; margin-bottom: 40px;">
+                                    Shinra y el autor del anime están listos para dar una noticia que alegrará a todos los fans de Fire Force.
+                                </p>
+                                <a class="btnDescargarBanner" href="#" style="font-family: 'Courier New', Courier, monospace;">Leer Ahora</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a" style="width: 100vw;">
+                        <div class="banner" style="background: linear-gradient(rgba(0, 0, 0, 0.50) 100%, black 100%), url(https://wallpaperaccess.com/full/2376002.jpg);">
+                            <div class="title-banner">
+                                <h1 style="color: white; font-family: 'Bebas Neue', cursive; font-size: 50px;">La 3era temporada está cerca</h1>
+                                <br>
+                                <a href="#" class="btn btn-danger anime" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">Fire Force</a>
+                                <a href="#" class="btn btn-danger year" style="color: white; font-weight: lighter; font-size: 16px; padding: 3px 15px; background-color: transparent; width: auto !important; border-radius: 0px; border: 2px solid white;">2021</a>
+                                <br><br>
+                                <p class="pIndexSinopsis" style="color: rgba(255, 255, 255, 0.857); font-size: 15px; margin-bottom: 40px;">
+                                    La tercera entrega del anime podría estar cerca según esta información.
+                                </p>
+                                <a class="btnDescargarBanner" href="#" style="font-family: 'Courier New', Courier, monospace;">Leer Ahora</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="section-ultimas-noticias-index">
+        <div class="ultimas-noticias container" style="background-color: white; width: 100%; height: auto; width: 100%;">
+            <div class="x-noticia-index">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="https://infoliteraria.com/wp-content/uploads/2019/07/anime-Fire-Force-1280x720.jpg" alt="" style="width: 100%; height: 100%; border: 3px solid black;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contenido" style="padding: 10px;">
+                            <h1 style="font-family: 'Bebas Neue', cursive;">Enn Enn no Shouboutai: Fire Force Manga</h1>
+                            <div class="d-flex flex-row filaInfo">
+                                <p><i class="fas fa-user"></i> LaLindaREM</p>
+                                <p><i class="fas fa-clock" style="margin-left: 10px;"></i> 04-09-2021</p>
+                            </div>
+                            <hr style="padding: 1px; border-radius: 50px; background-color: black !important;">  
+                            <p>
+                                ¡Una nueva fantasía de acción ambientada en un Tokio steampunk del creador del 
+                                exitoso Soul Eater! La ciudad de Tokio está plagada de un fenómeno mortal: 
+                                ¡la combustión humana espontánea! Afortunadamente, un equipo especial está allí 
+                                para apagar el infierno: ¡La Fuerza de Fuego! Los soldados de bomberos en Special 
+                                Fire Cathedral 8 están a punto de obtener una adición única. Entra Shinra, un niño 
+                                que posee el poder de correr a la velocidad de un cohete, dejando atrás las famosas 
+                                "huellas del diablo" (y destruyendo sus zapatos en el proceso). ¿Pueden Shinra y 
+                                sus colegas descubrir la fuente de esta extraña epidemia antes de que la ciudad se 
+                                queme en cenizas?
+                            </p>  
+                            <a href="#" class="btnLeerMangaIndex btn" style="font-family: 'Courier New', Courier, monospace;">¡Leer Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="x-noticia-index">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="https://somoskudasai.com/wp-content/uploads/2020/05/portada_fire-force-2.jpg" alt="" style="width: 100%; height: 100%; border: 3px solid black;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contenido" style="padding: 10px;">
+                            <h1 style="font-family: 'Bebas Neue', cursive;">Enn Enn no Shouboutai: Fire Force supera 16 millones de copias en circulación</h1>
+                            <div class="d-flex flex-row filaInfo">
+                                <p><i class="fas fa-user"></i> LaLindaREM</p>
+                                <p><i class="fas fa-clock" style="margin-left: 10px;"></i> 04-09-2021</p>
+                            </div>
+                            <hr style="padding: 1px; border-radius: 50px; background-color: black !important;">  
+                            <p>
+                                En la cuenta oficial de Twitter del manga escrito e ilustrado por Atsushi Ohkubo, 
+                                Enn Enn no Shouboutai (Fire Force), se publicó la portada del vigésimo noveno volumen 
+                                recopilatorio de la obra. El cintillo de este volumen confirmó que la franquicia 
+                                literaria ha superado las 16 millones de copias en circulación acumuladas, incluyendo 
+                                las copias digitales vendidas. Este volumen será lanzado el próximo 17 de junio en Japón.
+                            </p>  
+                            <a href="#" class="btnLeerMangaIndex btn" style="font-family: 'Courier New', Courier, monospace;">¡Leer Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="x-noticia-index">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="https://somoskudasai.com/wp-content/uploads/2020/11/portada_fire-force-17.jpg" alt="" style="width: 100%; height: 100%; border: 3px solid black;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contenido" style="padding: 10px;">
+                            <h1 style="font-family: 'Bebas Neue', cursive;">Enn Enn no Shouboutai: Fire Force revela nueva visual para su nuevo arco</h1>
+                            <div class="d-flex flex-row filaInfo">
+                                <p><i class="fas fa-user"></i> LaLindaREM</p>
+                                <p><i class="fas fa-clock" style="margin-left: 10px;"></i> 04-09-2021</p>
+                            </div>
+                            <hr style="padding: 1px; border-radius: 50px; background-color: black !important;">  
+                            <p>
+                                En el sitio oficial para la adaptación al anime del manga escrito e ilustrado por 
+                                Atsushi Ohkubo, Enen no Shouboutai (Fire Force), se reveló una nueva imagen promocional 
+                                para el próximo arco de la segunda temporada, que comprenderá los episodios 19 al 24. 
+                                Adicionalmente, se confirmaron dos nuevos miembros del elenco de voces:
+                            </p>  
+                            <a href="#" class="btnLeerMangaIndex btn" style="font-family: 'Courier New', Courier, monospace;">¡Leer Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-volumenes-index">
+        <div class="contenido container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <a href="#" class="card-volumen-manga-index" style="text-decoration: none; margin-bottom: 40px;"><div class="card" style="border: none;">
+                        <div class="d-flex flex-row">
+                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/10/kimetsu-no-yaiba-movie-mugen-ressha-hen-2106843.jpg?itok=RjM5j4Xi" alt="fire-force-manga" width="200px"
+                            height="300px">
+                            <div class="contenido-info-card" style="padding: 0px 10px;">
+                                <h5 style="font-family: 'Bebas Neue', cursive; color: black;">Película</h5>
+                                <h2 style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px; color: black;">Kimetsu no Yaiba, Demon Slayer. Mugen Ressha-hen</h2>
+                                <p style="color: black;"><i class="fas fa-clock"></i> Publicado el: 23 de septiembre de 2020</p>
+                                <p style="font-family: 'Bebas Neue', cursive; color: black;">
+                                    La ciudad de Tokio está plagada de un fenómeno mortal: ¡la combustión humana espontánea! Afortunadamente,
+                                    un equipo especial está allí para apagar el infierno: ¡La Fuerza de Fuego! Los soldados de bomberos en
+                                    Special Fire Cathedral 8 están a punto de obtener una adición única. Entra Shinra, un niño que posee el 
+                                    poder de correr a...
+                                </p>
+                                <!-- <a href="#" class="btnPreview btn" style="border: 2px solid black; background-color: transparent; color: black; padding: 8px 20px;"><i class="fas fa-eye"></i> Ver Ahora</a> -->
+                                <a href="#" class="btnLeerMangaIndex btn"><i class="fas fa-file-download"></i> ¡Descargar Ahora!</a>
+                            </div>
+                            
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <a href="#" class="card-volumen-manga-index" style="text-decoration: none; margin-bottom: 40px;"><div class="card" style="border: none;">
+                        <div class="d-flex flex-row">
+                            <img src="https://somoskudasai.com/wp-content/uploads/2018/09/tumblr_pf3k8cYZjr1rzp45wo1_1280-725x1024.jpg" alt="fire-force-manga" width="200px"
+                            height="300px">
+                            <div class="contenido-info-card" style="padding: 0px 10px;">
+                                <h5 style="font-family: 'Bebas Neue', cursive; color: black;">Película</h5>
+                                <h2 style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px; color: black;">Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</h2>
+                                <p style="color: black;"><i class="fas fa-clock"></i> Publicado el: 11 de diciembre de 2020</p>
+                                <p style="font-family: 'Bebas Neue', cursive; color: black;">
+                                    Arthur tiene una nueva espada. Shinra explora cómo viajar a Adolla... mientras que su hermano Shо̄ se
+                                    acerca a él desde el otro lado. Mientras tanto, el evangelista pone en marcha el fin del mundo. Un 
+                                    gran pilar se eleva desde el mar, y con él una amenaza gigantesca. ¡El Gran Cataclismo ha comenzado!
+                                </p>
+                                <!-- <a href="#" class="btnPreview btn" style="border: 2px solid black; background-color: transparent; color: black; padding: 8px 20px;"><i class="fas fa-eye"></i> Ver Ahora</a> -->
+                                <a href="#" class="btnLeerMangaIndex btn"><i class="fas fa-file-download"></i> ¡Descargar Ahora!</a>
+                            </div>
+                            
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <br>
+            <a href="templates/catalogo.html" class="btnLeerMangaIndex btn" style="border: 2px solid black; background-color: black; color: white;"><i class="fas fa-plus"></i> Ver todas las películas</a>
+        </div>
+    </section>
+    <section class="section-episodios-anime">
+        <div class="contenido container">
+            <div class="lista-episodios">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="caja-episodio-index" style="width: 100%; border: 2px solid black; background-color: transparent; text-align: left; color: black; padding: 5px; margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-lg-1 col-3">
+                                    <img src="http://pm1.narvii.com/6346/1b9a1f9a1de9e482f0e6f5ca9ba7945fc5433cbb_00.jpg" alt="" width="100%">
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <p style="font-family: 'Bebas Neue', cursive;">Temporada 1</p>
+                                    <h3 style="font-family: 'Bebas Neue', cursive;">Akame ga kill</h3>
+                                    <p style="font-family: 'Bebas Neue', cursive;">ANIME COMPLETO</p>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <a href="#" class="btnLeerMangaIndex btn"><i class="fas fa-file-download"></i> ¡Descargar Ahora!</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="caja-episodio-index" style="width: 100%; border: 2px solid black; background-color: transparent; text-align: left; color: black; padding: 5px; margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-lg-1 col-3">
+                                    <img src="https://static.wikia.nocookie.net/doblaje/images/9/9c/SAO_Aincrad_Arc.jpg/revision/latest?cb=20190501180906&path-prefix=es" alt="" width="100%">
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <p style="font-family: 'Bebas Neue', cursive;">Temporada 1</p>
+                                    <h3 style="font-family: 'Bebas Neue', cursive;">Sword Art Online: SAO</h3>
+                                    <p style="font-family: 'Bebas Neue', cursive;">ANIME COMPLETO</p>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <a href="#" class="btnLeerMangaIndex btn"><i class="fas fa-file-download"></i> ¡Descargar Ahora!</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="caja-episodio-index" style="width: 100%; border: 2px solid black; background-color: transparent; text-align: left; color: black; padding: 5px; margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-lg-1 col-3">
+                                    <img src="https://static.wikia.nocookie.net/doblaje/images/3/3b/Fire_Force_Poster.jpg/revision/latest?cb=20210705012740&path-prefix=es" alt="" width="100%">
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <p style="font-family: 'Bebas Neue', cursive;">Temporada 1</p>
+                                    <h3 style="font-family: 'Bebas Neue', cursive;">Enn Enn no Shouboutai: Fire Force</h3>
+                                    <p style="font-family: 'Bebas Neue', cursive;">ANIME COMPLETO</p>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <a href="#" class="btnLeerMangaIndex btn"><i class="fas fa-file-download"></i> ¡Descargar Ahora!</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="templates/catalogo.html" class="btnLeerMangaIndex btn" style="border: 2px solid black; background-color: black; color: white;"><i class="fas fa-plus"></i> Ver todos los animes</a>
+            </div>
+        </div>
+    </section>
+    <div id="sectionFormulario"></div>
+    <br><br><br>
+    <section class="section-registro" id="sectionRegister">
+        <div class="contenido container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="caja-contacto" style="border: 2px solid black; padding: 20px 10px 10px 10px;">
+                        <h1 style="font-family: 'Bebas Neue', cursive; font-size: 50px;">SUSCRIBETE EN BAK4NIME</h1>
+                    </div>
+                </div>
+            </div>
+            <form action="POST">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="contenido-formulario" style="padding: 20px 20px 40px 20px; border: 2px solid black; height: auto; width: 100%;">
+                            <div class="row">  
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Correo Electrónico</h5>
+                                    <input type="text" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Nombre de usuario</h5>
+                                    <input type="text" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Año nacimiento</h5>
+                                    <input type="date" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">País</h5>
+                                    <input type="date" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Género</h5>
+                                    <input type="date" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Contraseña</h5>
+                                    <input type="password" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Re-contraseña</h5>
+                                    <input type="password" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="contenido-formulario-botones" style="height: 100px;">
+                            <button type="submit" href="#" class="btn" style="border: none; border-radius: 0px; background-color: black; 
+                                color: white; width: 100%; height: 100%; align-items: center !important; font-family: 'Bebas Neue', cursive; font-size: 20px; letter-spacing: 2px;">SUSCRIBIRSE</button>
+                            <br>
+                            <button type="button" href="#" id="btnLogin" class="btn btnLogin" style="border: 2px solid black; border-radius: 0px; background-color: transparent; 
+                                color: black; width: 100%; height: 100%; align-items: center !important; font-family: 'Bebas Neue', cursive; font-size: 20px; letter-spacing: 2px;">INICIA SESIÓN</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section-registro" style="display: none;" id="sectionLogin">
+        <div class="contenido container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="caja-contacto" style="border: 2px solid black; padding: 20px 10px 10px 10px;">
+                        <h1 style="font-family: 'Bebas Neue', cursive; font-size: 50px;">INICIA SESIÓN EN BAK4NIME</h1>
+                    </div>
+                </div>
+            </div>
+            <form action="POST">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="contenido-formulario" style="padding: 20px 20px 40px 20px; border: 2px solid black; height: auto; width: 100%;">
+                            <div class="row">  
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Correo Electrónico</h5>
+                                    <input type="text" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h5 style="font-family: 'Bebas Neue', cursive;">Contraseña</h5>
+                                    <input type="password" style="border: 1px solid black; border-radius: 0px; width: 100%; padding: 10px;" required>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="contenido-formulario-botones" style="height: 100px;">
+                            <button type="submit" href="#" class="btn" style="border: none; border-radius: 0px; background-color: black; 
+                                color: white; width: 100%; height: 100%; align-items: center !important; font-family: 'Bebas Neue', cursive; font-size: 20px; letter-spacing: 2px;">INICIAR SESIÓN</button>
+                            <br>
+                            <button type="button" href="#" id="btnregisterUser" class="btn btnRegister" style="border: 2px solid black; border-radius: 0px; background-color: transparent; 
+                                color: black; width: 100%; height: 100%; align-items: center !important; font-family: 'Bebas Neue', cursive; font-size: 20px; letter-spacing: 2px;">SUSCRIBETE</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="contenido-btn-open-menu-pc" style="position: fixed; z-index: 700; right: 1.5%; bottom: 5%;">
+        <a href="#" id="openMenuPc" style="padding: 18px 15px 15px 15px; border-radius: 0px; border: 2px solid black; background-color: white; font-family: 'Bebas Neue', cursive;
+        text-decoration: underline; color: black; font-size: 20px; letter-spacing: 1px;">
+            <i class="fas fa-stream" style="color: black; font-size: 25px;"></i> MENÚ</a>
+    </div>
+
+    <section class="section-redes-fixed">
+        <div class="contenido" id="sectionMenuRedesFixed" style="position: fixed; z-index: 700; right: -100%; top: 22%; padding: 0px 5px; height: 475px;">
+            <a href="#" id="openBuscar" style="padding: 18px 16px 15px 16px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-search" style="color: black; font-size: 25px;"></i></a>
+            <br><br><br>
+            <a href="#" style="padding: 18px 15px 15px 15px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-home" style="color: black; font-size: 22px;"></i></a>
+            <br><br><br>
+            <a href="#" id="btnNoticiasPc" style="padding: 18px 16px 15px 16px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-newspaper" style="color: black; font-size: 22px;"></i></a>
+            <br><br><br>
+            <a href="#" id="btnAnimePc" style="padding: 18px 16px 15px 16px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-film" style="color: black; font-size: 22px;"></i></a>
+            <br><br><br>
+            <a href="#" style="padding: 18px 15px 15px 15px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-users" style="color: black; font-size: 22px;"></i></a>
+            <br><br><br>
+            <a href="#" id="btnMangaPc" style="padding: 18px 15px 15px 15px; border-radius: 0px; border: 2px solid black; background-color: white;"><i class="fas fa-book-open" style="color: black; font-size: 25px;"></i></a>
+            <br><br><br>
+            <a href="#" class="a1" id="closeMenuPc" style="padding: 18px 16px 15px 16px; border-radius: 0px; border: 2px solid black; background-color: black;"><i class="fas fa-angle-double-right" style="color: white; font-size: 25px;"></i></a>
+        </div>
+    </section>
+    <section class="section-footer">
+        <div class="contenido" style="background-color: black; padding: 10px 50px; height: 400px; width: 100%;">
+            <div class="cajaHoverFooter text-center" style="background-color: white; border: 2px solid black; padding: 5px; width: 20%; top: -10%; position: relative; margin: auto;">
+                <h5 style="font-family: 'Bebas Neue', cursive; padding-top: 10px;">Bak4nime.com</h5>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h1 style="font-family: 'Bebas Neue', cursive; font-size: 50px; color: white; letter-spacing: 1px;">BAK4NIME</h1>
+                    <h5 style="font-family: 'Bebas Neue', cursive; color: rgb(196, 196, 196); width: 50%;">
+                        AVIZ.com es una página sin fines de lucro, dedicada a aquellos fans quienes quieren disfrutar de sus animes favoritos.
+                        Si compraste una cuenta en AVIZ exige la devolución de tu dinero, las cuentas en esta página son gratuitas. Gracias portada
+                        preferirnos, esperamos disfrutes tu estadia aquí.
+                    </h5>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <img src="https://www.charactersize.com/wp-content/uploads/Logo-12.png" style="width: 100%;" alt="fire force">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <br><br>
+                    <div class="caja-redes">
+                        <a href="#" style="padding: 13px 15px; border-radius: 0px; background-color: white;"><i class="fab fa-facebook" style="color: black; font-size: 20px;"></i></a>
+                        <a href="#" style="padding: 13px 15px; border-radius: 0px; background-color: white;"><i class="fab fa-twitter" style="color: black; font-size: 20px;"></i></a>
+                        <a href="#" style="padding: 13px 15px; border-radius: 0px; background-color: white;"><i class="fab fa-instagram" style="color: black; font-size: 20px;"></i></a>
+                        <a href="#" style="padding: 13px 15px; border-radius: 0px; background-color: white;"><i class="fab fa-youtube" style="color: black; font-size: 20px;"></i></a>
+                        <a href="#" style="padding: 13px 15px; border-radius: 0px; background-color: white;"><i class="fas fa-mail-bulk" style="color: black; font-size: 20px;"></i></a>    
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <br><br>
+                    <p style="font-family: 'Bebas Neue', cursive; color: white; text-align: right;">
+                        © 2021 AVIZ Publicado en Chile. Todos los derechos reservados. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="static/js/JQuery3.3.1.js"></script>
+    <script src="static/js/all.js"></script>
+    <script src="static/js/all.min.js"></script>
+    <script src="static/js/fontawesome.js"></script>
+    <script src="static/js/fontawesome.min.js"></script>
+    <script src="static/js/lightslider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                } 
+            });  
+        });
+
+        $(document).ready(function() {
+            $('.irArriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                });
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 600 ){
+                    $('.irArriba').slideDown(300);
+                }else{
+                    $('.irArriba').slideUp(300);
+                }
+            });
+        });
+
+        function abrirMenuMobile(){
+            const btnMenuMobile = document.getElementById("openMenuMobile");
+            const menuMobile = document.getElementById("menuMobile");
+            const btnCloseMenuMobile = document.getElementById("closeMenuMobile");
+
+            btnMenuMobile.addEventListener("click", function(e){
+                e.preventDefault();
+                menuMobile.style.display = "unset";
+                menuMobile.style.transition = ".3s ease all";
+                btnMenuMobile.style.display = "none";
+                btnCloseMenuMobile.style.display = "unset";
+            });
+
+            btnCloseMenuMobile.addEventListener("click", function(e){
+                e.preventDefault();
+                menuMobile.style.display = "none";
+                menuMobile.style.transition = ".3s ease all";
+                btnCloseMenuMobile.style.display = "none";
+                btnMenuMobile.style.display = "unset";
+            });
+        }
+        abrirMenuMobile();
+
+        function abrirBuscador(){
+            const btnOpenBuscador = document.getElementById("openBuscar");
+            const cajaBuscar = document.getElementById("cajaBuscador");
+            const btnCloseBuscador = document.getElementById("closeBuscar");
+            const inputSearchPcMode = document.getElementById("inputPcMode");
+
+            btnOpenBuscador.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaBuscar.style.bottom = "0%";
+                cajaBuscar.style.transition = ".4s ease-out"
+                btnOpenBuscador.style.display = "none";
+                btnCloseBuscador.style.display = "unset";
+                inputSearchPcMode.focus();
+            });
+
+            btnCloseBuscador.addEventListener("click", function(e){
+                e.preventDefault()
+                cajaBuscar.style.bottom = "-100%";
+                cajaBuscar.style.transition = ".4s ease-in-out"
+                btnCloseBuscador.style.display = "none";
+                btnOpenBuscador.style.display = "unset";
+                inputSearchPcMode.value = "";
+            });
+        }
+        abrirBuscador();
+
+        function abrirLoginUser(){
+            const btnLoginUser = document.getElementById("btnLogin");
+            const btnRegisterUser = document.getElementById("btnregisterUser");
+            const sectionLoginUser = document.getElementById("sectionLogin");
+            const sectionRegisterUser = document.getElementById("sectionRegister");
+
+            btnLoginUser.addEventListener("click", function(e){
+                e.preventDefault();
+                sectionRegisterUser.style.display = "none";
+                sectionLoginUser.style.display = "unset";
+            });
+
+            btnRegisterUser.addEventListener("click", function(e){
+                e.preventDefault();
+                sectionLoginUser.style.display = "none";
+                sectionRegisterUser.style.display = "unset";
+            });
+        }
+        abrirLoginUser();
+
+        function abrirMenuPc(){
+            const btnOpenMenuPc = document.getElementById("openMenuPc");
+            const btnCloseMenuPc = document.getElementById("closeMenuPc");
+            const sectionMenuPcFixed = document.getElementById("sectionMenuRedesFixed");
+
+            btnOpenMenuPc.addEventListener("click", function(e){
+                e.preventDefault();
+                btnOpenMenuPc.style.opacity = "0";
+                btnOpenMenuPc.style.pointerEvents = "none";
+                sectionMenuPcFixed.style.right = "1%";
+                sectionMenuPcFixed.style.transition = ".4s ease-out";
+            });
+
+            btnCloseMenuPc.addEventListener("click", function(e){
+                e.preventDefault();
+                btnOpenMenuPc.style.opacity = "1";
+                btnOpenMenuPc.style.pointerEvents = "all";
+                sectionMenuPcFixed.style.right = "-100%";
+                sectionMenuPcFixed.style.transition = ".4s ease-in-out";
+            });
+        }
+        abrirMenuPc();
+
+        function abrirHeaderNoticiasPc(){
+            const btnNoticiasHeaderPc = document.getElementById("btnNoticiasPc");
+            const cajaNoticiasHeaderPc = document.getElementById("cajaNoticiasHeader");
+            const closeHeaderNoticiasPc = document.getElementById("closeHeaderNoticias");
+
+            btnNoticiasHeaderPc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaNoticiasHeaderPc.style.left = "0%";
+                cajaNoticiasHeaderPc.style.transition = ".5s ease-out";
+                cajaNoticiasHeaderPc.style.opacity = "1";
+            });
+
+            closeHeaderNoticiasPc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaNoticiasHeaderPc.style.left = "200%";
+                cajaNoticiasHeaderPc.style.transition = ".5s ease-in-out";
+                cajaNoticiasHeaderPc.style.opacity = "0";
+            });
+        }
+        abrirHeaderNoticiasPc();
+
+        function abrirHeaderAnimePc(){
+            const btnAnimeHeaderPc = document.getElementById("btnAnimePc");
+            const cajaAnimeHeaderPc = document.getElementById("cajaAnimeHeader");
+            const closeHeaderAnimePc = document.getElementById("closeHeaderAnime");
+
+            btnAnimeHeaderPc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaAnimeHeaderPc.style.left = "0%";
+                cajaAnimeHeaderPc.style.transition = ".5s ease-out";
+                cajaAnimeHeaderPc.style.opacity = "1";
+            });
+
+            closeHeaderAnimePc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaAnimeHeaderPc.style.left = "200%";
+                cajaAnimeHeaderPc.style.transition = ".5s ease-in-out";
+                cajaAnimeHeaderPc.style.opacity = "0";
+            });
+        }
+        abrirHeaderAnimePc();
+
+        function abrirHeaderMangaPc(){
+            const btnMangaHeaderPc = document.getElementById("btnMangaPc");
+            const cajaMangaHeaderPc = document.getElementById("cajaMangaHeader");
+            const closeHeaderMangaPc = document.getElementById("closeHeaderManga");
+
+            btnMangaHeaderPc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaMangaHeaderPc.style.left = "0%";
+                cajaMangaHeaderPc.style.transition = ".5s ease-out";
+                cajaMangaHeaderPc.style.opacity = "1";
+            });
+
+            closeHeaderMangaPc.addEventListener("click", function(e){
+                e.preventDefault();
+                cajaMangaHeaderPc.style.left = "200%";
+                cajaMangaHeaderPc.style.transition = ".5s ease-in-out";
+                cajaMangaHeaderPc.style.opacity = "0";
+            });
+        }
+        abrirHeaderMangaPc();
+    </script>
+</body>
+</html>
